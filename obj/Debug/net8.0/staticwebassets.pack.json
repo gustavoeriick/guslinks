@@ -1,0 +1,57 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\@work\\guslinks\\guslinks\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\guslinks.bundle.scp.css",
+      "PackagePath": "staticwebassets\\guslinks.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\@work\\guslinks\\guslinks\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\@work\\guslinks\\guslinks\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\@work\\guslinks\\guslinks\\wwwroot\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\@work\\guslinks\\guslinks\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
+    },
+    {
+      "Id": "C:\\@work\\guslinks\\guslinks\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\@work\\guslinks\\guslinks\\wwwroot\\imagens\\perfil.png",
+      "PackagePath": "staticwebassets\\imagens\\perfil.png"
+    },
+    {
+      "Id": "C:\\@work\\guslinks\\guslinks\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\@work\\guslinks\\guslinks\\wwwroot\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.guslinks.props",
+      "PackagePath": "build\\guslinks.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.guslinks.props",
+      "PackagePath": "buildMultiTargeting\\guslinks.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.guslinks.props",
+      "PackagePath": "buildTransitive\\guslinks.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.guslinks.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
