@@ -1,39 +1,39 @@
 {
   "Files": [
     {
-      "Id": "C:\\@work\\guslinks\\guslinks\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\guslinks.bundle.scp.css",
+      "Id": "C:\\@work\\guslinks\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\guslinks.bundle.scp.css",
       "PackagePath": "staticwebassets\\guslinks.bundle.scp.css"
     },
     {
-      "Id": "C:\\@work\\guslinks\\guslinks\\wwwroot\\app.css",
+      "Id": "C:\\@work\\guslinks\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },
     {
-      "Id": "C:\\@work\\guslinks\\guslinks\\wwwroot\\css\\bootstrap.min.css",
+      "Id": "C:\\@work\\guslinks\\wwwroot\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\@work\\guslinks\\guslinks\\wwwroot\\css\\bootstrap.min.css.map",
+      "Id": "C:\\@work\\guslinks\\wwwroot\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\@work\\guslinks\\guslinks\\wwwroot\\css\\styles.css",
+      "Id": "C:\\@work\\guslinks\\wwwroot\\css\\styles.css",
       "PackagePath": "staticwebassets\\css\\styles.css"
     },
     {
-      "Id": "C:\\@work\\guslinks\\guslinks\\wwwroot\\favicon.png",
+      "Id": "C:\\@work\\guslinks\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\@work\\guslinks\\guslinks\\wwwroot\\imagens\\perfil.png",
+      "Id": "C:\\@work\\guslinks\\wwwroot\\imagens\\perfil.png",
       "PackagePath": "staticwebassets\\imagens\\perfil.png"
     },
     {
-      "Id": "C:\\@work\\guslinks\\guslinks\\wwwroot\\js\\bootstrap.min.js",
+      "Id": "C:\\@work\\guslinks\\wwwroot\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\@work\\guslinks\\guslinks\\wwwroot\\js\\bootstrap.min.js.map",
+      "Id": "C:\\@work\\guslinks\\wwwroot\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js.map"
     },
     {
