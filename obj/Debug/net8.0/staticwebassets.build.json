@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "S8w3Aan3ua90URbg8Wafz9mu0ypjbJ0X4/RhVJ+VBtI=",
+  "Hash": "rMFpgPBQWctheALn4+89G0xLc8jk977r1ItKRCcVIjk=",
   "Source": "guslinks",
   "BasePath": "_content/guslinks",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "guslinks\\wwwroot",
       "Source": "guslinks",
-      "ContentRoot": "C:\\@work\\guslinks\\wwwroot\\",
+      "ContentRoot": "C:\\@study\\guslinks\\wwwroot\\",
       "BasePath": "_content/guslinks",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\@work\\guslinks\\obj\\Debug\\net8.0\\scopedcss\\bundle\\guslinks.styles.css",
+      "Identity": "C:\\@study\\guslinks\\obj\\Debug\\net8.0\\scopedcss\\bundle\\guslinks.styles.css",
       "SourceId": "guslinks",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\@work\\guslinks\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\@study\\guslinks\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/guslinks",
       "RelativePath": "guslinks.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\@work\\guslinks\\obj\\Debug\\net8.0\\scopedcss\\bundle\\guslinks.styles.css"
+      "OriginalItemSpec": "C:\\@study\\guslinks\\obj\\Debug\\net8.0\\scopedcss\\bundle\\guslinks.styles.css"
     },
     {
-      "Identity": "C:\\@work\\guslinks\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\guslinks.bundle.scp.css",
+      "Identity": "C:\\@study\\guslinks\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\guslinks.bundle.scp.css",
       "SourceId": "guslinks",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\@work\\guslinks\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\@study\\guslinks\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/guslinks",
       "RelativePath": "guslinks.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\@work\\guslinks\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\guslinks.bundle.scp.css"
+      "OriginalItemSpec": "C:\\@study\\guslinks\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\guslinks.bundle.scp.css"
     },
     {
-      "Identity": "C:\\@work\\guslinks\\wwwroot\\app.css",
+      "Identity": "C:\\@study\\guslinks\\wwwroot\\app.css",
       "SourceId": "guslinks",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\@work\\guslinks\\wwwroot\\",
+      "ContentRoot": "C:\\@study\\guslinks\\wwwroot\\",
       "BasePath": "_content/guslinks",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "C:\\@work\\guslinks\\wwwroot\\css\\bootstrap.min.css",
+      "Identity": "C:\\@study\\guslinks\\wwwroot\\css\\bootstrap.min.css",
       "SourceId": "guslinks",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\@work\\guslinks\\wwwroot\\",
+      "ContentRoot": "C:\\@study\\guslinks\\wwwroot\\",
       "BasePath": "_content/guslinks",
       "RelativePath": "css/bootstrap.min.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\@work\\guslinks\\wwwroot\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\@study\\guslinks\\wwwroot\\css\\bootstrap.min.css.map",
       "SourceId": "guslinks",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\@work\\guslinks\\wwwroot\\",
+      "ContentRoot": "C:\\@study\\guslinks\\wwwroot\\",
       "BasePath": "_content/guslinks",
       "RelativePath": "css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\@work\\guslinks\\wwwroot\\css\\styles.css",
+      "Identity": "C:\\@study\\guslinks\\wwwroot\\css\\styles.css",
       "SourceId": "guslinks",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\@work\\guslinks\\wwwroot\\",
+      "ContentRoot": "C:\\@study\\guslinks\\wwwroot\\",
       "BasePath": "_content/guslinks",
       "RelativePath": "css/styles.css",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\css\\styles.css"
     },
     {
-      "Identity": "C:\\@work\\guslinks\\wwwroot\\favicon.png",
+      "Identity": "C:\\@study\\guslinks\\wwwroot\\favicon.png",
       "SourceId": "guslinks",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\@work\\guslinks\\wwwroot\\",
+      "ContentRoot": "C:\\@study\\guslinks\\wwwroot\\",
       "BasePath": "_content/guslinks",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
-      "Identity": "C:\\@work\\guslinks\\wwwroot\\imagens\\perfil.png",
+      "Identity": "C:\\@study\\guslinks\\wwwroot\\imagens\\perfil.png",
       "SourceId": "guslinks",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\@work\\guslinks\\wwwroot\\",
+      "ContentRoot": "C:\\@study\\guslinks\\wwwroot\\",
       "BasePath": "_content/guslinks",
       "RelativePath": "imagens/perfil.png",
       "AssetKind": "All",
@@ -169,10 +169,29 @@
       "OriginalItemSpec": "wwwroot\\imagens\\perfil.png"
     },
     {
-      "Identity": "C:\\@work\\guslinks\\wwwroot\\js\\bootstrap.min.js",
+      "Identity": "C:\\@study\\guslinks\\wwwroot\\imagens\\perfil\\1.png",
       "SourceId": "guslinks",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\@work\\guslinks\\wwwroot\\",
+      "ContentRoot": "C:\\@study\\guslinks\\wwwroot\\",
+      "BasePath": "_content/guslinks",
+      "RelativePath": "imagens/perfil/1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\perfil\\1.png"
+    },
+    {
+      "Identity": "C:\\@study\\guslinks\\wwwroot\\js\\bootstrap.min.js",
+      "SourceId": "guslinks",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\@study\\guslinks\\wwwroot\\",
       "BasePath": "_content/guslinks",
       "RelativePath": "js/bootstrap.min.js",
       "AssetKind": "All",
@@ -188,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\@work\\guslinks\\wwwroot\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\@study\\guslinks\\wwwroot\\js\\bootstrap.min.js.map",
       "SourceId": "guslinks",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\@work\\guslinks\\wwwroot\\",
+      "ContentRoot": "C:\\@study\\guslinks\\wwwroot\\",
       "BasePath": "_content/guslinks",
       "RelativePath": "js/bootstrap.min.js.map",
       "AssetKind": "All",

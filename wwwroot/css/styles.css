@@ -44,6 +44,17 @@
     width: 170px;
 }
 
+.nome-perfil {
+    color: #fff;
+    font-size: 24px;
+}
+
+.texto-perfil {
+    color: #fff;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
 .links {
     display: contents;
     text-decoration: none;
