@@ -25,12 +25,36 @@
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
+      "Id": "C:\\@study\\guslinks\\wwwroot\\imagens\\fundo\\hiperespaco.png",
+      "PackagePath": "staticwebassets\\imagens\\fundo\\hiperespaco.png"
+    },
+    {
+      "Id": "C:\\@study\\guslinks\\wwwroot\\imagens\\fundo\\nebulosa_4.png",
+      "PackagePath": "staticwebassets\\imagens\\fundo\\nebulosa_4.png"
+    },
+    {
+      "Id": "C:\\@study\\guslinks\\wwwroot\\imagens\\fundo\\reed_caules.jpg",
+      "PackagePath": "staticwebassets\\imagens\\fundo\\reed_caules.jpg"
+    },
+    {
+      "Id": "C:\\@study\\guslinks\\wwwroot\\imagens\\fundo\\textura_fibras.png",
+      "PackagePath": "staticwebassets\\imagens\\fundo\\textura_fibras.png"
+    },
+    {
+      "Id": "C:\\@study\\guslinks\\wwwroot\\imagens\\fundo\\via_lactea.png",
+      "PackagePath": "staticwebassets\\imagens\\fundo\\via_lactea.png"
+    },
+    {
       "Id": "C:\\@study\\guslinks\\wwwroot\\imagens\\perfil.png",
       "PackagePath": "staticwebassets\\imagens\\perfil.png"
     },
     {
       "Id": "C:\\@study\\guslinks\\wwwroot\\imagens\\perfil\\1.png",
       "PackagePath": "staticwebassets\\imagens\\perfil\\1.png"
+    },
+    {
+      "Id": "C:\\@study\\guslinks\\wwwroot\\imagens\\perfil\\2.png",
+      "PackagePath": "staticwebassets\\imagens\\perfil\\2.png"
     },
     {
       "Id": "C:\\@study\\guslinks\\wwwroot\\js\\bootstrap.min.js",

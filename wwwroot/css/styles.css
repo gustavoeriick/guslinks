@@ -56,11 +56,14 @@
 }
 
 .links {
+    color: #000;
     display: contents;
     text-decoration: none;
 }
 
 .bt-links {
+    border: 1px solid;
+    border-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;

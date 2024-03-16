@@ -1,14 +1,15 @@
 ﻿@page "/{url}"
 @layout Layout.LayoutSecundario;
 @using guslinks.Components.Models;
+@using guslinks.Components.Listas;
 
     @if (carregarConteudo)
     {
         <img class="img-perfil" src="imagens/perfil/@imgPerfil" />
 
-        <div class="nome-perfil">@listaUsuarios.FirstOrDefault(c => c.id == usuarioAtual).nome</div>
+        <div class="nome-perfil">@usuarios.listaUsuarios.FirstOrDefault(c => c.id == usuarioAtual).nome</div>
 
-        <div class="texto-perfil">@listaUsuarios.FirstOrDefault(c => c.id == usuarioAtual).texto</div>
+        <div class="texto-perfil">@usuarios.listaUsuarios.FirstOrDefault(c => c.id == usuarioAtual).texto</div>
 
         @foreach (var link in linksUsuario.OrderBy(c => c.ordem))
         {
@@ -18,10 +19,46 @@
         <div class="ico-links">
             @foreach (var rede in redesUsuario.OrderBy(c => c.ordem))
             {
-                <a class="links" href="@rede.link"><i class="bi @listaIcones.FirstOrDefault(c => c.id == rede.icone).icoRede"></i></a>        
+                <a class="links" href="@rede.link"><i class="bi @icones.listaIcones.FirstOrDefault(c => c.id == rede.icone).icoRede"></i></a>        
             }
         </div>
+
+        <style>
+
+            html, body {
+                background-color: @configUsuario.planofundo_cor;
+                background-image: url("/imagens/fundo/@configUsuario.planofundo_img");
+            }
+
+            .img-perfil {border-color: @configUsuario.imgperfil_borda_cor;}
+
+            .nome-perfil {
+                font-family: @configUsuario.nome_fonte;
+                color: @configUsuario.nome_cor;
+            }
+
+            .texto-perfil {
+                font-family: @configUsuario.texto_fonte;
+                color: @configUsuario.texto_cor;
+            }
+
+            .links {color: @configUsuario.link_texto_cor;}
+
+            .bt-links {
+                background-color: @configUsuario.link_fundo_cor;
+                border-color: @configUsuario.link_borda_cor;
+                font-family: @configUsuario.link_texto_fonte;
+            }
+
+            .bi {color: @configUsuario.icone_cor;}
+
+            .texto-rodape {color: @configUsuario.nome_cor;}
+
+            .link-rodape {color: @configUsuario.nome_cor;}
+
+        </style>
     }
+
 
 
 @code {
@@ -30,43 +67,31 @@
     public int usuarioAtual { get; set; }
     public List<Links> linksUsuario { get; set; }
     public List<Redes> redesUsuario { get; set; }
+    public Configuracoes configUsuario { get; set; }
     public string imgPerfil { get; set; }
     public bool carregarConteudo = false;
 
-    List<Usuario> listaUsuarios = new List<Usuario>
-    {
-        new Usuario { id = 1, nome = "Gustavo Ferreira", texto = "Analista de Sistemas / Dev Full Stack", link = "gus", email = "gus@example.com", senha = "gus123", plus = true, ativo = true },
-    };
-
-    List<Links> listaLinks = new List<Links>
-    {
-        new Links { id = 1, idUsuario = 1, link = "#", texto = "LINK", imagem = "", ordem = 1 , ativo = true},
-        new Links { id = 2, idUsuario = 1, link = "#", texto = "LINK", imagem = "", ordem = 2 , ativo = true},
-        new Links { id = 3, idUsuario = 1, link = "#", texto = "LINK", imagem = "", ordem = 3 , ativo = true},
-        new Links { id = 4, idUsuario = 1, link = "#", texto = "LINK", imagem = "", ordem = 4 , ativo = true},
-    };
-
-    List<Redes> listaRedes = new List<Redes>
-    {
-        new Redes { id = 1, idUsuario = 1, link = "https://www.instagram.com/gustavoeriick/", icone = 1, ordem = 1 , ativo = true},
-        new Redes { id = 1, idUsuario = 1, link = "https://github.com/gustavoeriick", icone = 3, ordem = 1 , ativo = true},
-    };
-
-    List<Icones> listaIcones = new List<Icones>
-    {
-        new Icones { id = 1, icoRede = "bi-instagram"},
-        new Icones { id = 2, icoRede = "bi-twitter-x"},
-        new Icones { id = 3, icoRede = "bi-github"},
-    };
+    public ListaUsuarios usuarios { get; set; }
+    public ListaLinks links { get; set; }
+    public ListaRedes redes { get; set; }
+    public ListaIcones icones { get; set; }
+    public ListaConfiguracoes config { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
+        usuarios = new();
+        links = new();
+        redes = new();
+        icones = new();
+        config = new();
+
         if (url != null & url != "favicon.png")
         {
             carregarConteudo = true;
-            usuarioAtual = listaUsuarios.FirstOrDefault(u => u.link == url).id;
-            linksUsuario = listaLinks.Where(l => l.idUsuario == usuarioAtual).ToList();
-            redesUsuario = listaRedes.Where(r => r.idUsuario == usuarioAtual).ToList();
+            usuarioAtual = usuarios.listaUsuarios.FirstOrDefault(u => u.link == url).id;
+            linksUsuario = links.listaLinks.Where(l => l.idUsuario == usuarioAtual).ToList();
+            redesUsuario = redes.listaRedes.Where(r => r.idUsuario == usuarioAtual).ToList();
+            configUsuario = config.listaConfig.Where(x => x.idUsuario == usuarioAtual).First();
 
             imgPerfil = usuarioAtual + ".png";
         }
