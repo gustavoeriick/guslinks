@@ -5,7 +5,9 @@
 
     @if (carregarConteudo)
     {
-        <img class="img-perfil" src="imagens/perfil/@imgPerfil" />
+        <div class="box-img-perfil">
+            <img class="img-perfil" src="imagens/perfil/@imgPerfil" />
+        </div>
 
         <div class="nome-perfil">@usuarios.listaUsuarios.FirstOrDefault(c => c.id == usuarioAtual).nome</div>
 
@@ -30,7 +32,9 @@
                 background-image: url("/imagens/fundo/@configUsuario.planofundo_img");
             }
 
-            .img-perfil {border-color: @configUsuario.imgperfil_borda_cor;}
+            .box-img-perfil {
+                border-color: @configUsuario.imgperfil_borda_cor;
+            }
 
             .nome-perfil {
                 font-family: @configUsuario.nome_fonte;
@@ -58,8 +62,6 @@
 
         </style>
     }
-
-
 
 @code {
     [Parameter]

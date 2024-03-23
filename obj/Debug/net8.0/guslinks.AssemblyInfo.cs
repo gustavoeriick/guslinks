@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("guslinks")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+877d4d5d69dcd8d6cde63bf50e07222a330cd276")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1d47de48f53affb52f8a04902461fe052afa00d")]
 [assembly: System.Reflection.AssemblyProductAttribute("guslinks")]
 [assembly: System.Reflection.AssemblyTitleAttribute("guslinks")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
