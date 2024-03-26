@@ -1,7 +1,30 @@
 ﻿@page "/Login"
+@inherits LoginBase;
 
-<h3>Login</h3>
+<div class="box-img-perfil">
+	<img class="img-perfil" src="imagens/perfil.png" />
+</div>
 
-@code {
+<div class="nome-perfil pb-2">GusLinks</div>
 
+<div class="form-floating mb-3">
+	<input type="email" class="form-control" id="email" placeholder="" @bind-value="Email">
+	<label class="floatingInput" for="floatingInput">Email</label>
+</div>
+<div class="form-floating">
+	<input type="password" class="form-control" id="senha" placeholder="" @bind-value="Senha">
+	<label class="floatingInput" for="floatingPassword">Senha</label>
+</div>
+
+@if (Erro)
+{
+	<div class="alert alert-danger mt-3" role="alert">
+		@((MarkupString)@MensagemErro.Replace("\n", "<br>"))
+	</div>
 }
+<div class="login-box-texto pt-2">
+	<span class="login-texto">Ainda não tem um cadastro? <a class="login-link" href="/Cadastro">Clique aqui!</a></span>
+</div>
+
+
+<button type="button" class="cadastro-finalizar mt-3" @onclick="Logar">Logar</button>

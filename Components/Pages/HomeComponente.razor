@@ -13,17 +13,17 @@
 
         <div class="texto-perfil">@usuarios.listaUsuarios.FirstOrDefault(c => c.id == usuarioAtual).texto</div>
 
+        <div class="ico-links">
+            @foreach (var rede in redesUsuario.OrderBy(c => c.ordem))
+            {
+                <a class="links" href="@rede.link"><i class="bi @icones.listaIcones.FirstOrDefault(c => c.id == rede.icone).icoRede"></i></a>
+            }
+        </div>
+
         @foreach (var link in linksUsuario.OrderBy(c => c.ordem))
         {
             <a class="links" href="@link.link"><div class="bt-links">@link.texto</div></a>
         }
-
-        <div class="ico-links">
-            @foreach (var rede in redesUsuario.OrderBy(c => c.ordem))
-            {
-                <a class="links" href="@rede.link"><i class="bi @icones.listaIcones.FirstOrDefault(c => c.id == rede.icone).icoRede"></i></a>        
-            }
-        </div>
 
         <style>
 

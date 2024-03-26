@@ -13,10 +13,10 @@ namespace guslinks.Components.Pages
 		public string Email = "";
 		public string Senha = "";
 
-		public string erroNome = "";
-		public string erroUrl = "";
-		public string erroEmail = "";
-		public string erroSenha = "";
+		public string validacaoNome = "";
+		public string validacaoUrl = "";
+		public string validacaoEmail = "";
+		public string validacaoSenha = "";
 
 		public bool Erro = false;
 		public string MensagemErro = "";
@@ -34,19 +34,19 @@ namespace guslinks.Components.Pages
 			Erro = false;
 			MensagemErro = "";
 
-			erroNome = "";
-			erroUrl = "";
-			erroEmail = "";
-			erroSenha = "";
+			validacaoNome = "";
+			validacaoUrl = "";
+			validacaoEmail = "";
+			validacaoSenha = "";
 
-		await InvokeAsync(StateHasChanged);
+			await InvokeAsync(StateHasChanged);
 
 			// Nome
 
 			if (string.IsNullOrEmpty(Nome))
 			{
 				Erro = true;
-				erroNome = "is-invalid";
+				validacaoNome = "is-invalid";
 				MensagemErro = MensagemErro + Uteis.Formatacao.Msg("O preenchimento do campo 'Nome' é obrigatório");
 				await InvokeAsync(StateHasChanged);
 			}
@@ -55,7 +55,7 @@ namespace guslinks.Components.Pages
 				if (Nome.Length < 4)
 				{
 					Erro = true;
-					erroNome = "is-invalid";
+					validacaoNome = "is-invalid";
 					MensagemErro = MensagemErro + Uteis.Formatacao.Msg("O campo 'Nome' não pode conter menos de 4 caracteres");
 					await InvokeAsync(StateHasChanged);
 				}
@@ -63,7 +63,7 @@ namespace guslinks.Components.Pages
 				if (Nome.Length > 100)
 				{
 					Erro = true;
-					erroNome = "is-invalid";
+                    validacaoNome = "is-invalid";
 					MensagemErro = MensagemErro + Uteis.Formatacao.Msg("O campo 'Nome' não pode conter mais de 100 caracteres");
 					await InvokeAsync(StateHasChanged);
 				}
@@ -73,18 +73,24 @@ namespace guslinks.Components.Pages
 				if (!retorno)
 				{
 					Erro = true;
-					erroNome = "is-invalid";
+                    validacaoNome = "is-invalid";
 					MensagemErro = MensagemErro + Uteis.Formatacao.Msg("O campo 'Nome' permite somente letras e números");
 					await InvokeAsync(StateHasChanged);
 				}
-			}
+
+				if (string.IsNullOrEmpty(validacaoNome))
+				{
+                    validacaoNome = "is-valid";
+                    await InvokeAsync(StateHasChanged);
+                }
+            }
 
 			// URL
 
 			if (string.IsNullOrEmpty(URL))
 			{
 				Erro = true;
-				erroUrl = "is-invalid";
+				validacaoUrl = "is-invalid";
 				MensagemErro = MensagemErro + Uteis.Formatacao.Msg("O preenchimento do campo 'URL' é obrigatório");
 				await InvokeAsync(StateHasChanged);
 			}
@@ -93,7 +99,7 @@ namespace guslinks.Components.Pages
 				if (URL.Length < 6)
 				{
 					Erro = true;
-					erroUrl = "is-invalid";
+                    validacaoUrl = "is-invalid";
 					MensagemErro = MensagemErro + Uteis.Formatacao.Msg("O campo 'URL' não pode conter menos de 6 caracteres");
 					await InvokeAsync(StateHasChanged);
 				}
@@ -101,7 +107,7 @@ namespace guslinks.Components.Pages
 				if (URL.Length > 50)
 				{
 					Erro = true;
-					erroUrl = "is-invalid";
+                    validacaoUrl = "is-invalid";
 					MensagemErro = MensagemErro + Uteis.Formatacao.Msg("O campo 'URL' não pode conter mais de 50 caracteres");
 					await InvokeAsync(StateHasChanged);
 				}
@@ -111,18 +117,24 @@ namespace guslinks.Components.Pages
 				if (!retorno)
 				{
 					Erro = true;
-					erroUrl = "is-invalid";
+                    validacaoUrl = "is-invalid";
 					MensagemErro = MensagemErro + Uteis.Formatacao.Msg("O campo 'URL' permite somente letras e números");
 					await InvokeAsync(StateHasChanged);
 				}
-			}
+
+                if (string.IsNullOrEmpty(validacaoUrl))
+                {
+                    validacaoUrl = "is-valid";
+                    await InvokeAsync(StateHasChanged);
+                }
+            }
 
 			// E-mail
 
 			if (string.IsNullOrEmpty(Email))
 			{
 				Erro = true;
-				erroEmail = "is-invalid";
+				validacaoEmail = "is-invalid";
 				MensagemErro = MensagemErro + Uteis.Formatacao.Msg("O preenchimento do campo 'Email' é obrigatório");
 				await InvokeAsync(StateHasChanged);
 			}
@@ -133,18 +145,24 @@ namespace guslinks.Components.Pages
 				if (!retorno)
 				{
 					Erro = true;
-					erroEmail = "is-invalid";
+                    validacaoEmail = "is-invalid";
 					MensagemErro = MensagemErro + Uteis.Formatacao.Msg("E-mail inválido!");
 					await InvokeAsync(StateHasChanged);
 				}
-			}
+
+                if (string.IsNullOrEmpty(validacaoEmail))
+                {
+                    validacaoEmail = "is-valid";
+                    await InvokeAsync(StateHasChanged);
+                }
+            }
 
 			// Senha
 
 			if (string.IsNullOrEmpty(Senha))
 			{
 				Erro = true;
-				erroSenha = "is-invalid";
+				validacaoSenha = "is-invalid";
 				MensagemErro = MensagemErro + Uteis.Formatacao.Msg("O preenchimento do campo 'Senha' é obrigatório");
 				await InvokeAsync(StateHasChanged);
 			}
@@ -153,7 +171,7 @@ namespace guslinks.Components.Pages
 				if (Senha.Length < 8)
 				{
 					Erro = true;
-					erroSenha = "is-invalid";
+                    validacaoSenha = "is-invalid";
 					MensagemErro = MensagemErro + Uteis.Formatacao.Msg("O campo 'Senha' não pode conter menos de 8 caracteres");
 					await InvokeAsync(StateHasChanged);
 				}
@@ -161,7 +179,7 @@ namespace guslinks.Components.Pages
 				if (Senha.Length > 20)
 				{
 					Erro = true;
-					erroSenha = "is-invalid";
+                    validacaoSenha = "is-invalid";
 					MensagemErro = MensagemErro + Uteis.Formatacao.Msg("O campo 'Senha' não pode conter mais de 20 caracteres");
 					await InvokeAsync(StateHasChanged);
 				}
@@ -171,11 +189,17 @@ namespace guslinks.Components.Pages
 				if (!retorno)
 				{
 					Erro = true;
-					erroSenha = "is-invalid";
+                    validacaoSenha = "is-invalid";
 					MensagemErro = MensagemErro + Uteis.Formatacao.Msg("O campo 'Senha' permite letras, números e alguns caracteres especiais (!?#$%&*)");
 					await InvokeAsync(StateHasChanged);
 				}
-			}
+
+                if (string.IsNullOrEmpty(validacaoSenha))
+                {
+                    validacaoSenha = "is-valid";
+                    await InvokeAsync(StateHasChanged);
+                }
+            }
 
 			if (!Erro)
 			{
