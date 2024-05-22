@@ -4,10 +4,10 @@ namespace guslinks.Components.Listas
 {
     public class ListaUsuarios
     {
-        public List<Usuario> listaUsuarios = new List<Usuario>
+        public List<UsuarioModel> listaUsuarios = new List<UsuarioModel>
         {
-            new Usuario { id = 1, nome = "Gustavo Ferreira", texto = "Analista de Sistemas / Dev Full Stack", link = "gus", email = "gustavo.eriick@gmail.com", senha = "gus123456", plus = true, ativo = true },
-            new Usuario { id = 2, nome = "Juju Sobrancelhas", texto = "✨ leveza e personalidade ao seu olhar", link = "juju", email = "juju@example.com", senha = "juju123", plus = true, ativo = true },
+            new UsuarioModel { id = 1, nome = "Gustavo Ferreira", texto = "Analista de Sistemas / Dev Full Stack", url = "gus", email = "gustavo.eriick@gmail.com", senha = "gus123456", vip = true, ativo = true },
+            new UsuarioModel { id = 2, nome = "Juju Sobrancelhas", texto = "✨ leveza e personalidade ao seu olhar", url = "juju", email = "juju@example.com", senha = "juju123", vip = true, ativo = true },
         };
     }
 }

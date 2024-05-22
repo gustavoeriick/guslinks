@@ -4,9 +4,9 @@ namespace guslinks.Components.Listas
 {
     public class ListaConfiguracoes
     {
-        public List<Configuracoes> listaConfig = new List<Configuracoes>
+        public List<ConfiguracoesModel> listaConfig = new List<ConfiguracoesModel>
         {
-            new Configuracoes { 
+            new ConfiguracoesModel { 
                 id = 1, 
                 idUsuario = 1, 
                 planofundo_cor = "", 
@@ -21,7 +21,7 @@ namespace guslinks.Components.Listas
                 link_texto_fonte = "",
                 icone_cor = ""
             },
-            new Configuracoes { 
+            new ConfiguracoesModel { 
                 id = 2, 
                 idUsuario = 2, 
                 planofundo_cor = "#c3bfbf", 

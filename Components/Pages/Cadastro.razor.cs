@@ -3,15 +3,23 @@ using Microsoft.AspNetCore.Components;
 using static System.Net.Mime.MediaTypeNames;
 using System.Text.RegularExpressions;
 using guslinks.Components.Uteis;
+using Infra.Data.Repository.Persistence.Guslinks;
+using guslinks.Components.Models;
+using Microsoft.IdentityModel.Tokens;
+using General.Entidades.Guslinks;
+using guslinks.Components.Listas;
+using System.Globalization;
 
 namespace guslinks.Components.Pages
 {
 	public class CadastroBase : ComponentBase
 	{
-		public string Nome = "";
-		public string URL = "";
-		public string Email = "";
-		public string Senha = "";
+		public Usuarios Usuario { get; set; }
+
+		//public string Nome = "";
+		//public string URL = "";
+		//public string Email = "";
+		//public string Senha = "";
 
 		public string validacaoNome = "";
 		public string validacaoUrl = "";
@@ -25,6 +33,8 @@ namespace guslinks.Components.Pages
 
 		protected override async Task OnInitializedAsync()
 		{
+			Usuario = new();
+
 			await base.OnInitializedAsync();
 			await InvokeAsync(StateHasChanged);
 		}
@@ -43,7 +53,7 @@ namespace guslinks.Components.Pages
 
 			// Nome
 
-			if (string.IsNullOrEmpty(Nome))
+			if (string.IsNullOrEmpty(Usuario.nome))
 			{
 				Erro = true;
 				validacaoNome = "is-invalid";
@@ -52,7 +62,7 @@ namespace guslinks.Components.Pages
 			}
 			else
 			{
-				if (Nome.Length < 4)
+				if (Usuario.nome.Length < 4)
 				{
 					Erro = true;
 					validacaoNome = "is-invalid";
@@ -60,7 +70,7 @@ namespace guslinks.Components.Pages
 					await InvokeAsync(StateHasChanged);
 				}
 
-				if (Nome.Length > 100)
+				if (Usuario.nome.Length > 100)
 				{
 					Erro = true;
                     validacaoNome = "is-invalid";
@@ -68,7 +78,7 @@ namespace guslinks.Components.Pages
 					await InvokeAsync(StateHasChanged);
 				}
 
-				bool retorno = Uteis.Validacoes.ValidarNome(Nome);
+				bool retorno = Uteis.Validacoes.ValidarNome(Usuario.nome);
 
 				if (!retorno)
 				{
@@ -87,7 +97,7 @@ namespace guslinks.Components.Pages
 
 			// URL
 
-			if (string.IsNullOrEmpty(URL))
+			if (string.IsNullOrEmpty(Usuario.url))
 			{
 				Erro = true;
 				validacaoUrl = "is-invalid";
@@ -96,7 +106,7 @@ namespace guslinks.Components.Pages
 			}
 			else
 			{
-				if (URL.Length < 6)
+				if (Usuario.url.Length < 6)
 				{
 					Erro = true;
                     validacaoUrl = "is-invalid";
@@ -104,7 +114,7 @@ namespace guslinks.Components.Pages
 					await InvokeAsync(StateHasChanged);
 				}
 
-				if (URL.Length > 50)
+				if (Usuario.url.Length > 50)
 				{
 					Erro = true;
                     validacaoUrl = "is-invalid";
@@ -112,7 +122,7 @@ namespace guslinks.Components.Pages
 					await InvokeAsync(StateHasChanged);
 				}
 
-				bool retorno = Uteis.Validacoes.ValidarCaracteres1(URL);
+				bool retorno = Uteis.Validacoes.ValidarCaracteres1(Usuario.url);
 
 				if (!retorno)
 				{
@@ -131,7 +141,7 @@ namespace guslinks.Components.Pages
 
 			// E-mail
 
-			if (string.IsNullOrEmpty(Email))
+			if (string.IsNullOrEmpty(Usuario.email))
 			{
 				Erro = true;
 				validacaoEmail = "is-invalid";
@@ -140,7 +150,7 @@ namespace guslinks.Components.Pages
 			}
 			else
 			{
-				bool retorno = Uteis.Validacoes.ValidarEmail(Email);
+				bool retorno = Uteis.Validacoes.ValidarEmail(Usuario.email);
 
 				if (!retorno)
 				{
@@ -159,7 +169,7 @@ namespace guslinks.Components.Pages
 
 			// Senha
 
-			if (string.IsNullOrEmpty(Senha))
+			if (string.IsNullOrEmpty(Usuario.senha))
 			{
 				Erro = true;
 				validacaoSenha = "is-invalid";
@@ -168,7 +178,7 @@ namespace guslinks.Components.Pages
 			}
 			else
 			{
-				if (Senha.Length < 8)
+				if (Usuario.senha.Length < 8)
 				{
 					Erro = true;
                     validacaoSenha = "is-invalid";
@@ -176,7 +186,7 @@ namespace guslinks.Components.Pages
 					await InvokeAsync(StateHasChanged);
 				}
 
-				if (Senha.Length > 20)
+				if (Usuario.senha.Length > 20)
 				{
 					Erro = true;
                     validacaoSenha = "is-invalid";
@@ -184,7 +194,7 @@ namespace guslinks.Components.Pages
 					await InvokeAsync(StateHasChanged);
 				}
 
-				bool retorno = Uteis.Validacoes.ValidarCaracteres2(Senha);
+				bool retorno = Uteis.Validacoes.ValidarCaracteres2(Usuario.senha);
 
 				if (!retorno)
 				{
@@ -204,7 +214,55 @@ namespace guslinks.Components.Pages
 			if (!Erro)
 			{
 				//tudo certo
-				CadastroFinalizado = true;
+
+				using (UsuariosRepository rep = new())
+				{
+					var retorno = await rep.FindAllAsync();
+					var retornoUrl = await rep.CustomList(c => c.url.Equals(Usuario.url));
+					var retornoEmail = await rep.CustomList(c => c.email.Equals(Usuario.email));
+
+					if (retornoUrl.Count > 0)
+					{
+						Erro = true;
+						validacaoUrl = "is-invalid";
+						MensagemErro = MensagemErro + Uteis.Formatacao.Msg("Url já cadastrada!");
+						await InvokeAsync(StateHasChanged);
+					}
+
+					if (retornoEmail.Count > 0)
+					{
+						Erro = true;
+						validacaoUrl = "is-invalid";
+						MensagemErro = MensagemErro + Uteis.Formatacao.Msg("E-mail já cadastrado!");
+						await InvokeAsync(StateHasChanged);
+					}
+
+					if (!Erro)
+					{
+						var data = DateTime.Now;
+						var dataConvertida = data.ToString("yyyy-MM-dd HH:mm:ss");
+						var dataFormatada = DateTime.ParseExact(dataConvertida, "yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture);
+
+						//Usuario.nome = Nome;
+						//Usuario.url = URL;
+						//Usuario.email = Email;
+						//Usuario.senha = Senha;
+						Usuario.texto = "Esse é um texto padrão! Não esqueça de alterar!!";
+						Usuario.vip = false;
+						Usuario.ativo = true;
+						Usuario.datacadastro = dataFormatada;
+						Usuario.dataatualizacao = dataFormatada;
+						Usuario.cadastradopor = 0;
+						Usuario.atualizadopor = 0;
+
+						await rep.InsertAsync(Usuario);
+						await InvokeAsync(StateHasChanged);
+
+						Usuario = new();
+
+						CadastroFinalizado = true;
+					}
+				}
 			}
 
 			await InvokeAsync(StateHasChanged);

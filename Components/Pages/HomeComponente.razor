@@ -67,9 +67,9 @@
     [Parameter]
     public string url { get; set; }
     public int usuarioAtual { get; set; }
-    public List<Links> linksUsuario { get; set; }
-    public List<Redes> redesUsuario { get; set; }
-    public Configuracoes configUsuario { get; set; }
+    public List<LinksModel> linksUsuario { get; set; }
+    public List<RedesModel> redesUsuario { get; set; }
+    public ConfiguracoesModel configUsuario { get; set; }
     public string imgPerfil { get; set; }
     public bool carregarConteudo = false;
 
@@ -90,7 +90,7 @@
         if (url != null & url != "favicon.png")
         {
             carregarConteudo = true;
-            usuarioAtual = usuarios.listaUsuarios.FirstOrDefault(u => u.link == url).id;
+            usuarioAtual = usuarios.listaUsuarios.FirstOrDefault(u => u.url == url).id;
             linksUsuario = links.listaLinks.Where(l => l.idUsuario == usuarioAtual).ToList();
             redesUsuario = redes.listaRedes.Where(r => r.idUsuario == usuarioAtual).ToList();
             configUsuario = config.listaConfig.Where(x => x.idUsuario == usuarioAtual).First();
