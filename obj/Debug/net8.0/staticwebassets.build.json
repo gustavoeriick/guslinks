@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "J5iYfUgr36X+nnnFpxaverYpwc8KgWLTtretd7CJb8o=",
+  "Hash": "P4ASKZ/iIG8xFb8Lw9QHg1U2UoCchlvAcByVeHdSxds=",
   "Source": "guslinks",
   "BasePath": "_content/guslinks",
   "Mode": "Default",
@@ -300,6 +300,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\perfil\\2.png"
+    },
+    {
+      "Identity": "C:\\@study\\guslinks\\wwwroot\\imagens\\perfil\\sem_img.svg",
+      "SourceId": "guslinks",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\@study\\guslinks\\wwwroot\\",
+      "BasePath": "_content/guslinks",
+      "RelativePath": "imagens/perfil/sem_img.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\perfil\\sem_img.svg"
     },
     {
       "Identity": "C:\\@study\\guslinks\\wwwroot\\js\\bootstrap.bundle.min.js",

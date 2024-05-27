@@ -57,6 +57,10 @@
       "PackagePath": "staticwebassets\\imagens\\perfil\\2.png"
     },
     {
+      "Id": "C:\\@study\\guslinks\\wwwroot\\imagens\\perfil\\sem_img.svg",
+      "PackagePath": "staticwebassets\\imagens\\perfil\\sem_img.svg"
+    },
+    {
       "Id": "C:\\@study\\guslinks\\wwwroot\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
     },

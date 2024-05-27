@@ -16,6 +16,7 @@ namespace guslinks.Components.Pages
 	public class CadastroBase : ComponentBase
 	{
 		public Usuarios Usuario { get; set; }
+		public List<Usuarios> lstUsuarios { get; set; }
 
 		//public string Nome = "";
 		//public string URL = "";
@@ -98,7 +99,7 @@ namespace guslinks.Components.Pages
 			}
 		}
 
-		public async Task ValidaUrl()
+		public async Task ValidaUrl(List<Usuarios> usuarios)
 		{
 			Erro = false;
 			MensagemErro = "";
@@ -149,31 +150,31 @@ namespace guslinks.Components.Pages
 
 				if (string.IsNullOrEmpty(validacaoUrl))
 				{
-					using (UsuariosRepository rep = new())
+					bool valido = true;
+
+					foreach (var us in usuarios)
 					{
-                        Usuarios ValidaUrl = new();
-
-                        ValidaUrl = await rep.CustomSearch(c => c.url.Equals(Usuario.url));
-
-						if (ValidaUrl.url != null)
+						if (us.url == Usuario.url)
 						{
+                            valido = false;
                             Erro = true;
                             validacaoUrl = "is-invalid";
                             MensagemErro = MensagemErro + Uteis.Formatacao.Msg("Url já cadastrada");
                             await InvokeAsync(StateHasChanged);
+                            break;
                         }
-                        else
-                        {
-                            validacaoUrl = "is-valid";
-                            await InvokeAsync(StateHasChanged);
-                        }
+                    }
 
+                    if (valido)
+                    {
+                        validacaoUrl = "is-valid";
+                        await InvokeAsync(StateHasChanged);
                     }
 				}
 			}
 		}
 
-		public async Task ValidaEmail()
+		public async Task ValidaEmail(List<Usuarios> usuarios)
 		{
 			Erro = false;
 			MensagemErro = "";
@@ -202,24 +203,25 @@ namespace guslinks.Components.Pages
 
 				if (string.IsNullOrEmpty(validacaoEmail))
 				{
-					using (UsuariosRepository rep = new())
-					{
-						Usuarios validaEmail = new();
+                    bool valido = true;
 
-                        validaEmail = await rep.CustomSearch(c => c.email.Equals(Usuario.email));
-
-						if (validaEmail.email != null)
-						{
+                    foreach (var us in usuarios)
+                    {
+                        if (us.email == Usuario.email)
+                        {
+							valido = false;
                             Erro = true;
                             validacaoEmail = "is-invalid";
                             MensagemErro = MensagemErro + Uteis.Formatacao.Msg("E-mail já cadastrado");
                             await InvokeAsync(StateHasChanged);
+                            break;
                         }
-                        else
-                        {
-                            validacaoEmail = "is-valid";
-                            await InvokeAsync(StateHasChanged);
-                        }
+                    }
+
+                    if (valido)
+                    {
+                        validacaoEmail = "is-valid";
+                        await InvokeAsync(StateHasChanged);
                     }
 				}
 			}
@@ -285,14 +287,21 @@ namespace guslinks.Components.Pages
 			await Task.Delay(2000);
 			await InvokeAsync(StateHasChanged);
 
-			// Nome
-			ValidaNome();
+			using (UsuariosRepository rep = new())
+			{
+				Usuarios user = new();
+
+				lstUsuarios = await rep.FindAllAsync();
+			}
+
+            // Nome
+            ValidaNome();
 
 			// URL
-			ValidaUrl();
+			ValidaUrl(lstUsuarios);
 
 			// E-mail
-			ValidaEmail();
+			ValidaEmail(lstUsuarios);
 
 			// Senha
 			ValidaSenha();
@@ -318,16 +327,45 @@ namespace guslinks.Components.Pages
 					await rep.InsertAsync(Usuario);
 					await InvokeAsync(StateHasChanged);
 
-					var usuario_cadastrado = await rep.CustomSearch(c => c.url.Equals(Usuario.id));
+					// cadastrar config
+					using (ConfiguracoesRepository conf = new())
+					{
+						Configuracoes config = new Configuracoes();
+
+						config.id = 0;
+						config.idUsuario = Usuario.id;
+						config.tem_img_perfil = false;
+                        config.planofundo_cor = "";
+						config.planofundo_img = "";
+						config.imgperfil_borda_cor = "";
+						config.nome_cor = "";
+						config.nome_fonte = "";
+						config.texto_cor = "";
+						config.texto_fonte = "";
+						config.link_fundo_cor = "";
+						config.link_texto_cor = "";
+						config.link_texto_fonte = "";
+						config.link_borda_cor = "";
+						config.icone_cor = "";
+						config.datacadastro = data;
+						config.dataatualizacao = data;
+						config.cadastradopor = 0;
+						config.atualizadopor = 0;
+
+                        await conf.InsertAsync(config);
+                        await InvokeAsync(StateHasChanged);
+
+                    }
 
 					using (LinksRepository link = new())
 					{
 						Links links = new Links();
 
 						links.id = 0;
-						links.idUsuario = usuario_cadastrado.id;
+						links.idUsuario = Usuario.id;
 						links.link = "https://github.com/gustavoeriick";
 						links.texto = "GitHub: gustavoeriick";
+						links.imagem = "";
 						links.ordem = 1;
 						links.ativo = true;
 						links.datacadastro = data;
@@ -344,7 +382,7 @@ namespace guslinks.Components.Pages
 						LinksContatos contatos = new LinksContatos();
 
                         contatos.id = 0;
-                        contatos.idUsuario = usuario_cadastrado.id;
+                        contatos.idUsuario = Usuario.id;
                         contatos.link = "gustavoeriick";
                         contatos.idIcone = 1;
                         contatos.ordem = 1;

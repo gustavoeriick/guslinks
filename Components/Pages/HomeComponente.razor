@@ -5,17 +5,24 @@
     @if (carregarConteudo)
     {
         <div class="box-img-perfil">
-            <img class="img-perfil" src="imagens/perfil/@imgPerfil" />
+            @if (config.tem_img_perfil)
+            {
+                <img class="img-perfil" src="imagens/perfil/@imgPerfil" />
+            }
+            else
+            {
+                <img class="img-perfil" src="imagens/perfil/@imgPerfil" style="filter:brightness(0) saturate(100%) invert(100%) sepia(15%) saturate(7496%) hue-rotate(179deg) brightness(117%) contrast(96%);" />
+            }
         </div>
 
         <div class="nome-perfil">@usuario.nome</div>
 
-        <div class="texto-perfil">usuario.texto</div>
+        <div class="texto-perfil">@usuario.texto</div>
 
         <div class="ico-links">
             @foreach (var rede in contatos.OrderBy(c => c.ordem))
             {
-                <a class="links" href="@rede.link"><i class="bi @icones.Where(c => c.id.Equals(rede.idIcone))"></i></a>
+            <a class="links" href="@rede.link"><i class="bi @icones.Where(c => c.id.Equals(rede.idIcone)).FirstOrDefault().icone"></i></a>
             }
         </div>
 
@@ -24,40 +31,75 @@
             <a class="links" href="@link.link"><div class="bt-links">@link.texto</div></a>
         }
 
-        <style>
+        <!-- CSS: Background -->
+        @if (!string.IsNullOrEmpty(config.planofundo_cor))
+        {
+            <style>html, body{background-color: @config.planofundo_cor;}</style>
+        }
 
-            html, body {
-                background-color: @config.planofundo_cor;
-                background-image: url("/imagens/fundo/@config.planofundo_img");
-            }
+        @if (!string.IsNullOrEmpty(config.planofundo_img))
+        {
+            <style>html, body {background-image: url("/imagens/fundo/@config.planofundo_img");}</style>
+        }
 
-            .box-img-perfil {border-color: @config.imgperfil_borda_cor;}
+        <!-- CSS: Perfil -->
+        @if (!string.IsNullOrEmpty(config.imgperfil_borda_cor))
+        {
+            <style>.box-img-perfil {border-color: @config.imgperfil_borda_cor;}</style>
+        }
 
-            .nome-perfil {
-                font-family: @config.nome_fonte;
-                color: @config.nome_cor;
-            }
+        @if (!string.IsNullOrEmpty(config.nome_fonte))
+        {
+            <style>.nome-perfil {font-family: @config.nome_fonte;}</style>
+        }
 
-            .texto-perfil {
-                font-family: @config.texto_fonte;
-                color: @config.texto_cor;
-            }
+        @if (!string.IsNullOrEmpty(config.nome_fonte))
+        {
+            <style>.nome-perfil {color: @config.nome_cor;}</style>
+        }
 
-            .links {
-                color: @config.link_texto_cor;
-            }
+        @if (!string.IsNullOrEmpty(config.texto_fonte))
+        {
+            <style>.texto-perfil {font-family: @config.texto_fonte;}</style>
+        }
 
-            .bt-links {
-                background-color: @config.link_fundo_cor;
-                border-color: @config.link_borda_cor;
-                font-family: @config.link_texto_fonte;
-            }
+        @if (!string.IsNullOrEmpty(config.texto_fonte))
+        {
+            <style>.texto-perfil {color: @config.texto_cor;}</style>
+        }
 
-            .bi {color: @config.icone_cor;}
+        <!-- CSS: Botões links -->
+        @if (!string.IsNullOrEmpty(config.link_texto_cor))
+        {
+            <style>.links {color: @config.link_texto_cor;}</style>
+        }
 
-            .texto-rodape {color: @config.nome_cor;}
+        @if (!string.IsNullOrEmpty(config.link_fundo_cor))
+        {
+            <style>.bt-links {background-color: @config.link_fundo_cor;}</style>
+        }
 
-            .link-rodape {color: @config.nome_cor;}
+        @if (!string.IsNullOrEmpty(config.link_borda_cor))
+        {
+            <style>.bt-links {border-color: @config.link_borda_cor;}</style>
+        }
 
-        </style>
+        @if (!string.IsNullOrEmpty(config.link_texto_fonte))
+        {
+            <style>.bt-links {font-family: @config.link_texto_fonte;}</style>
+        }
+
+        <!-- CSS: Ícones -->
+        @if (!string.IsNullOrEmpty(config.icone_cor))
+        {
+            <style>.bi {color: @config.icone_cor;}</style>
+        }
+
+        <!-- CSS: Rodapé -->
+        @if (!string.IsNullOrEmpty(config.nome_cor))
+        {
+            <style>.texto-rodape {color: @config.nome_cor;}</style>
+            <style>.link-rodape {color: @config.nome_cor;}</style>
+        }
+
     }

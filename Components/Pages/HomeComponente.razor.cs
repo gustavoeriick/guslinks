@@ -13,8 +13,8 @@ namespace guslinks.Components.Pages
 	{
 		[Parameter]
 		public string url { get; set; }
-        public int usuarioAtual { get; set; }
         public string imgPerfil { get; set; }
+
         public bool carregarConteudo = false;
 
         // Entidades
@@ -24,19 +24,6 @@ namespace guslinks.Components.Pages
         public List<LinksContatos> contatos { get; set; }
         public List<TipoContato> icones { get; set; }
 
-        // Models
-        //public UsuarioModel usuario { get; set; }
-		public List<LinksModel> linksUsuario { get; set; }
-		public List<RedesModel> redesUsuario { get; set; }
-		public ConfiguracoesModel configUsuario { get; set; }
-
-
-		//public ListaUsuarios usuarios { get; set; }
-		//public ListaLinks links { get; set; }
-		//public ListaRedes redes { get; set; }
-		//public ListaIcones icones { get; set; }
-		//public ListaConfiguracoes config { get; set; }
-
         protected override async Task OnInitializedAsync()
         {
             usuario = new();
@@ -45,14 +32,8 @@ namespace guslinks.Components.Pages
             contatos = new();
             icones = new();
 
-            //linksUsuario = new();
-            //redesUsuario = new();
-            //configUsuario = new();
-
             if (url != null & url != "favicon.png")
             {
-                carregarConteudo = true;
-
                 using (UsuariosRepository user = new())
                 {
                     usuario = await user.CustomSearch(c => c.url.Equals(url));
@@ -60,17 +41,17 @@ namespace guslinks.Components.Pages
 
                 using (ConfiguracoesRepository conf = new())
                 {
-                    config = await conf.CustomSearch(c => c.idUsuario.Equals(usuario.id));
+                    config = await conf.CustomSearch(c => c.idUsuario == usuario.id);
                 }
 
                 using (LinksRepository link = new())
                 {
-                    links = await link.CustomList(c => c.idUsuario.Equals(usuario.id));
+                    links = await link.CustomList(c => c.idUsuario == usuario.id);
                 }
 
                 using (LinksContatosRepository cont = new())
                 {
-                    contatos = await cont.CustomList(c => c.idUsuario.Equals(usuario.id));
+                    contatos = await cont.CustomList(c => c.idUsuario == usuario.id);
                 }
 
                 using (TipoContatoRepository tipoc = new())
@@ -78,12 +59,16 @@ namespace guslinks.Components.Pages
                     icones = await tipoc.FindAllAsync();
                 }
 
-                //usuarioAtual = usuarios.listaUsuarios.FirstOrDefault(u => u.url == url).id;
-                //linksUsuario = links.listaLinks.Where(l => l.idUsuario == usuarioAtual).ToList();
-                //redesUsuario = redes.listaRedes.Where(r => r.idUsuario == usuarioAtual).ToList();
-                //configUsuario = config.listaConfig.Where(x => x.idUsuario == usuarioAtual).First();
+                if (config.tem_img_perfil)
+                {
+                    imgPerfil = usuario.id + ".png";
+                }
+                else
+                {
+                    imgPerfil = "sem_img.svg";
+                }
 
-                imgPerfil = usuarioAtual + ".png";
+                carregarConteudo = true;
             }
         }
     }
