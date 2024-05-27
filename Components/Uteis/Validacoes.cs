@@ -6,14 +6,14 @@ namespace guslinks.Components.Uteis
 	{
 		public static bool ValidarNome(string valor)
 		{
-			// Expressão regular que valida se há caracteres que não são letras, números ou espaço
-			Regex regex = new Regex("[^a-zA-Z0-9 ]");
+			// Expressão regular ajustada para incluir letras maiúsculas e minúsculas (incluindo acentuadas), números e espaços
+			Regex regex = new Regex("[^a-zA-Zà-úÀ-Ú0-9 ]");
 
 			// Verifica se o valor contém caracteres inválidos
 			return !regex.IsMatch(valor);
 		}
 
-		public static bool ValidarCaracteres1(string valor)
+		public static bool ValidarUrl(string valor)
 		{
 			// Expressão regular que valida se há caracteres que não são letras nem números
 			Regex regex = new Regex("[^a-zA-Z0-9]");
@@ -25,7 +25,7 @@ namespace guslinks.Components.Uteis
 		public static bool ValidarCaracteres2(string valor)
 		{
 			// Expressão regular que valida se há caracteres que não são letras, números ou especiais
-			Regex regex = new Regex("[^a-zA-Z0-9!?#$%&*]");
+			Regex regex = new Regex("[^a-zA-Z0-9@!?#$%&*]");
 
 			// Verifica se o valor contém caracteres inválidos
 			return !regex.IsMatch(valor);
