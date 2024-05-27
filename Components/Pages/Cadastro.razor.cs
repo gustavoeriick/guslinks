@@ -18,11 +18,6 @@ namespace guslinks.Components.Pages
 		public Usuarios Usuario { get; set; }
 		public List<Usuarios> lstUsuarios { get; set; }
 
-		//public string Nome = "";
-		//public string URL = "";
-		//public string Email = "";
-		//public string Senha = "";
-
 		public string validacaoNome = "";
 		public string validacaoUrl = "";
 		public string validacaoEmail = "";
@@ -99,10 +94,8 @@ namespace guslinks.Components.Pages
 			}
 		}
 
-		public async Task ValidaUrl(List<Usuarios> usuarios)
+		public async Task ValidaUrl(bool temUrl)
 		{
-			Erro = false;
-			MensagemErro = "";
 			validacaoUrl = "";
 
 			await InvokeAsync(StateHasChanged);
@@ -150,23 +143,15 @@ namespace guslinks.Components.Pages
 
 				if (string.IsNullOrEmpty(validacaoUrl))
 				{
-					bool valido = true;
-
-					foreach (var us in usuarios)
+					if (temUrl)
 					{
-						if (us.url == Usuario.url)
-						{
-                            valido = false;
-                            Erro = true;
-                            validacaoUrl = "is-invalid";
-                            MensagemErro = MensagemErro + Uteis.Formatacao.Msg("Url já cadastrada");
-                            await InvokeAsync(StateHasChanged);
-                            break;
-                        }
+                        Erro = true;
+                        validacaoUrl = "is-invalid";
+                        MensagemErro = MensagemErro + Uteis.Formatacao.Msg("Url já cadastrada");
+                        await InvokeAsync(StateHasChanged);
                     }
-
-                    if (valido)
-                    {
+					else
+					{
                         validacaoUrl = "is-valid";
                         await InvokeAsync(StateHasChanged);
                     }
@@ -174,10 +159,8 @@ namespace guslinks.Components.Pages
 			}
 		}
 
-		public async Task ValidaEmail(List<Usuarios> usuarios)
+		public async Task ValidaEmail(bool temEmail)
 		{
-			Erro = false;
-			MensagemErro = "";
 			validacaoEmail = "";
 
 			await InvokeAsync(StateHasChanged);
@@ -203,23 +186,15 @@ namespace guslinks.Components.Pages
 
 				if (string.IsNullOrEmpty(validacaoEmail))
 				{
-                    bool valido = true;
-
-                    foreach (var us in usuarios)
-                    {
-                        if (us.email == Usuario.email)
-                        {
-							valido = false;
-                            Erro = true;
-                            validacaoEmail = "is-invalid";
-                            MensagemErro = MensagemErro + Uteis.Formatacao.Msg("E-mail já cadastrado");
-                            await InvokeAsync(StateHasChanged);
-                            break;
-                        }
+					if (temEmail)
+					{
+                        Erro = true;
+                        validacaoEmail = "is-invalid";
+                        MensagemErro = MensagemErro + Uteis.Formatacao.Msg("E-mail já cadastrado");
+                        await InvokeAsync(StateHasChanged);
                     }
-
-                    if (valido)
-                    {
+					else
+					{
                         validacaoEmail = "is-valid";
                         await InvokeAsync(StateHasChanged);
                     }
@@ -229,8 +204,6 @@ namespace guslinks.Components.Pages
 
 		public async Task ValidaSenha()
 		{
-			Erro = false;
-			MensagemErro = "";
 			validacaoSenha = "";
 
 			await InvokeAsync(StateHasChanged);
@@ -291,95 +264,103 @@ namespace guslinks.Components.Pages
 			{
 				Usuarios user = new();
 
-				lstUsuarios = await rep.FindAllAsync();
-			}
-
-            // Nome
-            ValidaNome();
-
-			// URL
-			ValidaUrl(lstUsuarios);
-
-			// E-mail
-			ValidaEmail(lstUsuarios);
-
-			// Senha
-			ValidaSenha();
-
-			await InvokeAsync(StateHasChanged);
-
-			if (!Erro)
-			{
-				//tudo certo
-
-				using (UsuariosRepository rep = new())
+				var valUrl = await rep.CustomSearch(c => c.url == Usuario.url);
+				bool temUrl = false;
+				var valEmail = await rep.CustomSearch(c => c.email == Usuario.email);
+				bool temEmail = false;
+				
+				if(valUrl != null)
 				{
-					var data = DateTime.Now;
+					temUrl = true;
+                }
 
-					Usuario.texto = "Esse é um texto padrão! Não esqueça de alterar!!";
-					Usuario.vip = false;
-					Usuario.ativo = true;
-					Usuario.datacadastro = data;
-					Usuario.dataatualizacao = data;
-					Usuario.cadastradopor = 0;
-					Usuario.atualizadopor = 0;
+                if (valEmail != null)
+                {
+                    temEmail = true;
+                }
 
-					await rep.InsertAsync(Usuario);
-					await InvokeAsync(StateHasChanged);
+                // Nome
+                ValidaNome();
 
-					// cadastrar config
-					using (ConfiguracoesRepository conf = new())
-					{
-						Configuracoes config = new Configuracoes();
+                // URL
+                ValidaUrl(temUrl);
 
-						config.id = 0;
-						config.idUsuario = Usuario.id;
-						config.tem_img_perfil = false;
+                // E-mail
+                ValidaEmail(temEmail);
+
+                // Senha
+                ValidaSenha();
+
+                await InvokeAsync(StateHasChanged);
+
+                if (!Erro)
+                {
+                    var data = DateTime.Now;
+
+                    Usuario.texto = "Esse é um texto padrão! Não esqueça de alterar!!";
+                    Usuario.vip = false;
+                    Usuario.ativo = true;
+                    Usuario.datacadastro = data;
+                    Usuario.dataatualizacao = data;
+                    Usuario.cadastradopor = 0;
+                    Usuario.atualizadopor = 0;
+
+                    await rep.InsertAsync(Usuario);
+                    await InvokeAsync(StateHasChanged);
+
+                    // cadastrar config
+                    using (ConfiguracoesRepository conf = new())
+                    {
+                        Configuracoes config = new Configuracoes();
+
+                        config.id = 0;
+                        config.idUsuario = Usuario.id;
+                        config.tem_img_perfil = false;
                         config.planofundo_cor = "";
-						config.planofundo_img = "";
-						config.imgperfil_borda_cor = "";
-						config.nome_cor = "";
-						config.nome_fonte = "";
-						config.texto_cor = "";
-						config.texto_fonte = "";
-						config.link_fundo_cor = "";
-						config.link_texto_cor = "";
-						config.link_texto_fonte = "";
-						config.link_borda_cor = "";
-						config.icone_cor = "";
-						config.datacadastro = data;
-						config.dataatualizacao = data;
-						config.cadastradopor = 0;
-						config.atualizadopor = 0;
+                        config.planofundo_img = "";
+                        config.imgperfil_borda_cor = "";
+                        config.nome_cor = "";
+                        config.nome_fonte = "";
+                        config.texto_cor = "";
+                        config.texto_fonte = "";
+                        config.link_fundo_cor = "";
+                        config.link_texto_cor = "";
+                        config.link_texto_fonte = "";
+                        config.link_borda_cor = "";
+                        config.icone_cor = "";
+                        config.datacadastro = data;
+                        config.dataatualizacao = data;
+                        config.cadastradopor = 0;
+                        config.atualizadopor = 0;
 
                         await conf.InsertAsync(config);
                         await InvokeAsync(StateHasChanged);
 
                     }
 
-					using (LinksRepository link = new())
-					{
-						Links links = new Links();
+                    using (LinksRepository link = new())
+                    {
+                        Links links = new Links();
 
-						links.id = 0;
-						links.idUsuario = Usuario.id;
-						links.link = "https://github.com/gustavoeriick";
-						links.texto = "GitHub: gustavoeriick";
-						links.imagem = "";
-						links.ordem = 1;
-						links.ativo = true;
-						links.datacadastro = data;
-						links.dataatualizacao = data;
-						links.cadastradopor = 0;
-						links.atualizadopor = 0;
+                        links.id = 0;
+                        links.idUsuario = Usuario.id;
+                        links.link = "https://github.com/gustavoeriick";
+                        links.texto = "GitHub: gustavoeriick";
+                        links.imagem = "";
+                        links.ordem = 1;
+                        links.ativo = true;
+                        links.datacadastro = data;
+                        links.dataatualizacao = data;
+                        links.cadastradopor = 0;
+                        links.atualizadopor = 0;
 
                         await link.InsertAsync(links);
                         await InvokeAsync(StateHasChanged);
                     }
 
-					using (LinksContatosRepository cont = new())
-					{
-						LinksContatos contatos = new LinksContatos();
+                    using (LinksContatosRepository cont = new())
+                    {
+                        LinksContatos contatos = new LinksContatos();
 
                         contatos.id = 0;
                         contatos.idUsuario = Usuario.id;
@@ -397,9 +378,11 @@ namespace guslinks.Components.Pages
 
                     Usuario = new();
 
-					CadastroFinalizado = true;
-				}
-			}
+                    CadastroFinalizado = true;
+                }
+            }
+
+            
 
 			Loading = false;
 

@@ -22,7 +22,10 @@
         <div class="ico-links">
             @foreach (var rede in contatos.OrderBy(c => c.ordem))
             {
-            <a class="links" href="@rede.link"><i class="bi @icones.Where(c => c.id.Equals(rede.idIcone)).FirstOrDefault().icone"></i></a>
+                string nomeIcone = icones.Where(c => c.id.Equals(rede.idIcone)).FirstOrDefault().icone;
+                string linkBase = icones.Where(c => c.id.Equals(rede.idIcone)).FirstOrDefault().urlBase;
+                string linkCompleto = linkBase + rede.link;
+                <a class="links" href="@linkCompleto"><i class="bi @nomeIcone"></i></a>
             }
         </div>
 
