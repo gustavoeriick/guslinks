@@ -1,10 +1,16 @@
 using guslinks.Components;
+using guslinks.Components.Services;
+using Microsoft.AspNetCore.Components.Authorization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+// Adiciona os serviços de autenticação
+builder.Services.AddAuthorizationCore();
+builder.Services.AddScoped<CustomAuthenticationStateProvider>();
 
 var app = builder.Build();
 

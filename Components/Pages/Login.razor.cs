@@ -1,17 +1,29 @@
-﻿using guslinks.Components.Listas;
+﻿using General.Entidades.Guslinks;
+using guslinks.Components.Services;
+using guslinks.Components.Uteis;
+using Infra.Data.Repository.Persistence.Guslinks;
 using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Authorization;
 
 namespace guslinks.Components.Pages
 {
 	public class LoginBase : ComponentBase
 	{
-		public string Email;
-		public string Senha;
+		public Usuarios usuario { get; set; }
+
+		[Inject] public CustomAuthenticationStateProvider AuthenticationStateProvider { get; set; }
+		[Inject] public NavigationManager Navigation { get; set; }
 
 		public bool Erro = false;
 		public string MensagemErro = "";
 
-		public ListaUsuarios usuarios = new ListaUsuarios();
+		protected override async Task OnInitializedAsync()
+		{
+			usuario = new();
+
+			await base.OnInitializedAsync();
+			await InvokeAsync(StateHasChanged);
+		}
 
 		public async Task Logar()
 		{
@@ -22,7 +34,7 @@ namespace guslinks.Components.Pages
 
 			// E-mail
 
-			if (string.IsNullOrEmpty(Email))
+			if (string.IsNullOrEmpty(usuario.email))
 			{
 				Erro = true;
 				MensagemErro = MensagemErro + Uteis.Formatacao.Msg("O preenchimento do campo 'Email' é obrigatório");
@@ -30,7 +42,7 @@ namespace guslinks.Components.Pages
 			}
 			else
 			{
-				bool retorno = Uteis.Validacoes.ValidarEmail(Email);
+				bool retorno = Uteis.Validacoes.ValidarEmail(usuario.email);
 
 				if (!retorno)
 				{
@@ -42,7 +54,7 @@ namespace guslinks.Components.Pages
 
 			// Senha
 
-			if (string.IsNullOrEmpty(Senha))
+			if (string.IsNullOrEmpty(usuario.senha))
 			{
 				Erro = true;
 				MensagemErro = MensagemErro + Uteis.Formatacao.Msg("O preenchimento do campo 'Senha' é obrigatório");
@@ -50,21 +62,21 @@ namespace guslinks.Components.Pages
 			}
 			else
 			{
-				if (Senha.Length < 8)
+				if (usuario.senha.Length < 8)
 				{
 					Erro = true;
 					MensagemErro = MensagemErro + Uteis.Formatacao.Msg("O campo 'Senha' não pode conter menos de 8 caracteres");
 					await InvokeAsync(StateHasChanged);
 				}
 
-				if (Senha.Length > 20)
+				if (usuario.senha.Length > 20)
 				{
 					Erro = true;
 					MensagemErro = MensagemErro + Uteis.Formatacao.Msg("O campo 'Senha' não pode conter mais de 20 caracteres");
 					await InvokeAsync(StateHasChanged);
 				}
 
-				bool retorno = Uteis.Validacoes.ValidarCaracteres2(Senha);
+				bool retorno = Uteis.Validacoes.ValidarCaracteres2(usuario.senha);
 
 				if (!retorno)
 				{
@@ -78,33 +90,35 @@ namespace guslinks.Components.Pages
 			{
 				//tudo certo
 
-				bool acessoLiberado = false;
-
-				foreach (var usuario in usuarios.listaUsuarios)
+				using (UsuariosRepository us = new())
 				{
-					if (usuario.email == Email && usuario.senha == Senha)
+					var validaLogin = await us.CustomSearch(c => c.email == usuario.email);
+
+					if (validaLogin != null)
 					{
-						// Se encontrou o usuário com o e-mail e senha fornecidos
-						// aqui você pode fazer o que precisar, como retornar true ou 
-						// executar alguma outra ação.
-						acessoLiberado = true;
-						continue;
+						bool isSenhaValida = PasswordHasher.VerifyPassword(validaLogin.senha, usuario.senha);
+
+						if (!isSenhaValida)
+						{
+							Erro = true;
+							MensagemErro = MensagemErro + Uteis.Formatacao.Msg("Senha inválida");
+						}
+						else
+						{
+							// tudo certo
+							AuthenticationStateProvider.Login(usuario.email);
+							Navigation.NavigateTo("/Painel");
+						}
 					}
-				}
+					else
+					{
+						Erro = true;
+						MensagemErro = MensagemErro + Uteis.Formatacao.Msg("E-mail não cadastrado");
+					}
 
-				if (!acessoLiberado) 
-				{
-					Erro = true;
-					MensagemErro = MensagemErro + Uteis.Formatacao.Msg("Dados inválidos");
+					await InvokeAsync(StateHasChanged);
 				}
-				else
-				{
-					Erro = true;
-					MensagemErro = "Login liberado!";
-				}
-				await InvokeAsync(StateHasChanged);
 			}
-
 		}
 	}
 }

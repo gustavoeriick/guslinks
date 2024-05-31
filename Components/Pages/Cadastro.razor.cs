@@ -297,7 +297,8 @@ namespace guslinks.Components.Pages
                 {
                     var data = DateTime.Now;
 
-                    Usuario.texto = "Esse é um texto padrão! Não esqueça de alterar!!";
+					Usuario.senha = PasswordHasher.HashPassword(Usuario.senha);
+					Usuario.texto = "Esse é um texto padrão! Não esqueça de alterar!!";
                     Usuario.vip = false;
                     Usuario.ativo = true;
                     Usuario.datacadastro = data;

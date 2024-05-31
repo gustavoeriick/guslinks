@@ -1,5 +1,5 @@
 ﻿@page "/Login"
-@inherits LoginBase;
+@inherits LoginBase
 
 <div class="box-img-perfil">
 	<img class="img-perfil" src="imagens/perfil.png" />
@@ -8,11 +8,11 @@
 <div class="nome-perfil pb-2">GusLinks</div>
 
 <div class="form-floating mb-3">
-	<input type="email" class="form-control" id="email" placeholder="" @bind-value="Email">
+	<input type="email" class="form-control" id="email" placeholder="" @bind-value="usuario.email">
 	<label class="floatingInput" for="floatingInput">Email</label>
 </div>
 <div class="form-floating">
-	<input type="password" class="form-control" id="senha" placeholder="" @bind-value="Senha">
+	<input type="password" class="form-control" id="senha" placeholder="" @bind-value="usuario.senha">
 	<label class="floatingInput" for="floatingPassword">Senha</label>
 </div>
 

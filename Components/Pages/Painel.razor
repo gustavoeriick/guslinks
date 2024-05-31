@@ -1,7 +1,19 @@
 ﻿@page "/Painel"
+@using Microsoft.AspNetCore.Authorization
+@using guslinks.Components.Services
+@inject CustomAuthenticationStateProvider AuthStateProvider
+@inject NavigationManager Navigation
+@attribute [Authorize]
 
 <h3>Painel</h3>
+<p>você está logado!</p>
+
+<button type="button" class="cadastro-finalizar mt-3" @onclick="Sair">Sair</button>
 
 @code {
-
+	public async Task Sair()
+	{
+		await AuthStateProvider.Sair();
+        Navigation.NavigateTo("/Login");
+	}
 }

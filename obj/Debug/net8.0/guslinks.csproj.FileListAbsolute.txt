@@ -205,3 +205,11 @@ C:\@study\guslinks\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resourc
 C:\@study\guslinks\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\@study\guslinks\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\@study\guslinks\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\@study\guslinks\bin\Debug\net8.0\Konscious.Security.Cryptography.Argon2.dll
+C:\@study\guslinks\bin\Debug\net8.0\Konscious.Security.Cryptography.Blake2.dll
+C:\@study\guslinks\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\@study\guslinks\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+C:\@study\guslinks\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Authorization.dll
+C:\@study\guslinks\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\@study\guslinks\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\@study\guslinks\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
