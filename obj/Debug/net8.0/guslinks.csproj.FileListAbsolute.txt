@@ -367,10 +367,10 @@ C:\@project\guslinks\obj\Debug\net8.0\staticwebassets\msbuild.build.guslinks.pro
 C:\@project\guslinks\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.guslinks.props
 C:\@project\guslinks\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.guslinks.props
 C:\@project\guslinks\obj\Debug\net8.0\staticwebassets.pack.json
-C:\@project\guslinks\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\@project\guslinks\obj\Debug\net8.0\guslinks.csproj.Up2Date
 C:\@project\guslinks\obj\Debug\net8.0\guslinks.dll
 C:\@project\guslinks\obj\Debug\net8.0\refint\guslinks.dll
 C:\@project\guslinks\obj\Debug\net8.0\guslinks.pdb
 C:\@project\guslinks\obj\Debug\net8.0\guslinks.genruntimeconfig.cache
 C:\@project\guslinks\obj\Debug\net8.0\ref\guslinks.dll
+C:\@project\guslinks\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

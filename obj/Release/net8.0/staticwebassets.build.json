@@ -1,0 +1,2082 @@
+{
+  "Version": 1,
+  "Hash": "LBiLI937DRDOS2kMxuc5TwvjkojohsxBTvBCw1aHOXY=",
+  "Source": "guslinks",
+  "BasePath": "_content/guslinks",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "guslinks\\wwwroot",
+      "Source": "guslinks",
+      "ContentRoot": "C:\\@project\\guslinks\\wwwroot\\",
+      "BasePath": "_content/guslinks",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\@project\\guslinks\\obj\\Release\\net8.0\\scopedcss\\bundle\\guslinks.styles.css",
+      "SourceId": "guslinks",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\@project\\guslinks\\obj\\Release\\net8.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/guslinks",
+      "RelativePath": "guslinks#[.{fingerprint}]?.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "jwixluvd8h",
+      "Integrity": "83p5Ys8xo5FQ0q7Sibisb1UVR2CY6TNPsWNPYb5seNU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\@project\\guslinks\\obj\\Release\\net8.0\\scopedcss\\bundle\\guslinks.styles.css"
+    },
+    {
+      "Identity": "C:\\@project\\guslinks\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\guslinks.bundle.scp.css",
+      "SourceId": "guslinks",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\@project\\guslinks\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/guslinks",
+      "RelativePath": "guslinks#[.{fingerprint}]!.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "jwixluvd8h",
+      "Integrity": "83p5Ys8xo5FQ0q7Sibisb1UVR2CY6TNPsWNPYb5seNU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\@project\\guslinks\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\guslinks.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\@project\\guslinks\\wwwroot\\app.css",
+      "SourceId": "guslinks",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\@project\\guslinks\\wwwroot\\",
+      "BasePath": "_content/guslinks",
+      "RelativePath": "app#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "da95v2qkru",
+      "Integrity": "u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\app.css"
+    },
+    {
+      "Identity": "C:\\@project\\guslinks\\wwwroot\\css\\bootstrap.min.css",
+      "SourceId": "guslinks",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\@project\\guslinks\\wwwroot\\",
+      "BasePath": "_content/guslinks",
+      "RelativePath": "css/bootstrap.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "43atpzeawx",
+      "Integrity": "sKIQRfQriISuQ9l/44b1zHfQniGXJhGonVtB2LlSuIs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css"
+    },
+    {
+      "Identity": "C:\\@project\\guslinks\\wwwroot\\css\\bootstrap.min.css.map",
+      "SourceId": "guslinks",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\@project\\guslinks\\wwwroot\\",
+      "BasePath": "_content/guslinks",
+      "RelativePath": "css/bootstrap.min.css#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "v0zj4ognzu",
+      "Integrity": "8SM4U2NQpCLGTQLW5D/x3qSTwxVq2CP+GXYc3V1WwFs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\@project\\guslinks\\wwwroot\\css\\styles.css",
+      "SourceId": "guslinks",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\@project\\guslinks\\wwwroot\\",
+      "BasePath": "_content/guslinks",
+      "RelativePath": "css/styles#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5lzr8ub7nn",
+      "Integrity": "6Zw8mzqrGPAwDpR2cNJ4xDJxGMbpS3rdmUDSoEkSrbc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\styles.css"
+    },
+    {
+      "Identity": "C:\\@project\\guslinks\\wwwroot\\favicon.png",
+      "SourceId": "guslinks",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\@project\\guslinks\\wwwroot\\",
+      "BasePath": "_content/guslinks",
+      "RelativePath": "favicon#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ifv42okdf2",
+      "Integrity": "4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "C:\\@project\\guslinks\\wwwroot\\imagens\\fundo\\hiperespaco.png",
+      "SourceId": "guslinks",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\@project\\guslinks\\wwwroot\\",
+      "BasePath": "_content/guslinks",
+      "RelativePath": "imagens/fundo/hiperespaco#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4efgnkbnm5",
+      "Integrity": "7GjVi0GcKOIKR2N4/PuKlPAexZDGSL0RFRR5LerONKk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\fundo\\hiperespaco.png"
+    },
+    {
+      "Identity": "C:\\@project\\guslinks\\wwwroot\\imagens\\fundo\\nebulosa_4.png",
+      "SourceId": "guslinks",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\@project\\guslinks\\wwwroot\\",
+      "BasePath": "_content/guslinks",
+      "RelativePath": "imagens/fundo/nebulosa_4#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "eh37h1tj1k",
+      "Integrity": "ng1oTFcGPQCRAEkbbRzib0RvPBPl1eqqTsXMWnD31O4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\fundo\\nebulosa_4.png"
+    },
+    {
+      "Identity": "C:\\@project\\guslinks\\wwwroot\\imagens\\fundo\\reed_caules.jpg",
+      "SourceId": "guslinks",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\@project\\guslinks\\wwwroot\\",
+      "BasePath": "_content/guslinks",
+      "RelativePath": "imagens/fundo/reed_caules#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "llrx9tntnz",
+      "Integrity": "+fbdHMtfxa4JsZjWywjTMiJPCUYxjZDOwmAuvctv5nI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\fundo\\reed_caules.jpg"
+    },
+    {
+      "Identity": "C:\\@project\\guslinks\\wwwroot\\imagens\\fundo\\textura_fibras.png",
+      "SourceId": "guslinks",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\@project\\guslinks\\wwwroot\\",
+      "BasePath": "_content/guslinks",
+      "RelativePath": "imagens/fundo/textura_fibras#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s6vr1906qu",
+      "Integrity": "pLvEONWSMFcgtAwHn6luQZeu3hzmJNknbaur5wM0eck=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\fundo\\textura_fibras.png"
+    },
+    {
+      "Identity": "C:\\@project\\guslinks\\wwwroot\\imagens\\fundo\\via_lactea.png",
+      "SourceId": "guslinks",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\@project\\guslinks\\wwwroot\\",
+      "BasePath": "_content/guslinks",
+      "RelativePath": "imagens/fundo/via_lactea#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2xx5a2ynr4",
+      "Integrity": "ClODnbYmj3m7f+TQWJu34FxRmQ/DqVUS585BdrTsKiw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\fundo\\via_lactea.png"
+    },
+    {
+      "Identity": "C:\\@project\\guslinks\\wwwroot\\imagens\\perfil.png",
+      "SourceId": "guslinks",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\@project\\guslinks\\wwwroot\\",
+      "BasePath": "_content/guslinks",
+      "RelativePath": "imagens/perfil#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4cc3md6ol5",
+      "Integrity": "zBT21zGGkXacsS9GimXv8p7GDQ+tHMzQRrkahSoZR98=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\perfil.png"
+    },
+    {
+      "Identity": "C:\\@project\\guslinks\\wwwroot\\imagens\\perfil\\1.png",
+      "SourceId": "guslinks",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\@project\\guslinks\\wwwroot\\",
+      "BasePath": "_content/guslinks",
+      "RelativePath": "imagens/perfil/1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jikznsoqjk",
+      "Integrity": "ZUYQ2dJKK9/kD6sB33rmw6UGnYP9iD/JM4oF+DIcs0s=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\perfil\\1.png"
+    },
+    {
+      "Identity": "C:\\@project\\guslinks\\wwwroot\\imagens\\perfil\\2.png",
+      "SourceId": "guslinks",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\@project\\guslinks\\wwwroot\\",
+      "BasePath": "_content/guslinks",
+      "RelativePath": "imagens/perfil/2#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "u8l4posg52",
+      "Integrity": "cuKVLDliWSz4Ihb/fZQhuUA0VQqmMZucG0Nxom7km6Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\perfil\\2.png"
+    },
+    {
+      "Identity": "C:\\@project\\guslinks\\wwwroot\\imagens\\perfil\\sem_img.svg",
+      "SourceId": "guslinks",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\@project\\guslinks\\wwwroot\\",
+      "BasePath": "_content/guslinks",
+      "RelativePath": "imagens/perfil/sem_img#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "si65cpehxh",
+      "Integrity": "vJ909ASDAVbBrg3qEHAWibZ9JVujKMm6ma283ru4BAs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\perfil\\sem_img.svg"
+    },
+    {
+      "Identity": "C:\\@project\\guslinks\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "SourceId": "guslinks",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\@project\\guslinks\\wwwroot\\",
+      "BasePath": "_content/guslinks",
+      "RelativePath": "js/bootstrap.bundle.min#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hd3gran6i8",
+      "Integrity": "6zfk2L8R3wCgRbZzpkEi7UYC2bc6fYGIgFfNeqyOWnQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Identity": "C:\\@project\\guslinks\\wwwroot\\js\\bootstrap.bundle.min.js.map",
+      "SourceId": "guslinks",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\@project\\guslinks\\wwwroot\\",
+      "BasePath": "_content/guslinks",
+      "RelativePath": "js/bootstrap.bundle.min.js#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "iovd86k7lj",
+      "Integrity": "Xj4HYxZBQ7qqHKBwa2EAugRS+RHWzpcTtI49vgezUSU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Identity": "C:\\@project\\guslinks\\wwwroot\\js\\bootstrap.min.js",
+      "SourceId": "guslinks",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\@project\\guslinks\\wwwroot\\",
+      "BasePath": "_content/guslinks",
+      "RelativePath": "js/bootstrap.min#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4d85u1mtcx",
+      "Integrity": "aCTIqw9op0XQGYnNe1649V7fnihACD48OP3M8BP2xVM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bootstrap.min.js"
+    },
+    {
+      "Identity": "C:\\@project\\guslinks\\wwwroot\\js\\bootstrap.min.js.map",
+      "SourceId": "guslinks",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\@project\\guslinks\\wwwroot\\",
+      "BasePath": "_content/guslinks",
+      "RelativePath": "js/bootstrap.min.js#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0j3bgjxly4",
+      "Integrity": "ZI01e/ns473GKvACG4McggJdxvFfFIw4xspwQiG8Ye4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bootstrap.min.js.map"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "app.css",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2591"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE="
+        }
+      ]
+    },
+    {
+      "Route": "app.da95v2qkru.css",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2591"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "da95v2qkru"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap.min.43atpzeawx.css",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\css\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "232808"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sKIQRfQriISuQ9l/44b1zHfQniGXJhGonVtB2LlSuIs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "43atpzeawx"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sKIQRfQriISuQ9l/44b1zHfQniGXJhGonVtB2LlSuIs="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap.min.css",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\css\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "232808"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sKIQRfQriISuQ9l/44b1zHfQniGXJhGonVtB2LlSuIs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sKIQRfQriISuQ9l/44b1zHfQniGXJhGonVtB2LlSuIs="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap.min.css.map",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\css\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "589892"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8SM4U2NQpCLGTQLW5D/x3qSTwxVq2CP+GXYc3V1WwFs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8SM4U2NQpCLGTQLW5D/x3qSTwxVq2CP+GXYc3V1WwFs="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap.min.css.v0zj4ognzu.map",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\css\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "589892"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8SM4U2NQpCLGTQLW5D/x3qSTwxVq2CP+GXYc3V1WwFs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v0zj4ognzu"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap.min.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8SM4U2NQpCLGTQLW5D/x3qSTwxVq2CP+GXYc3V1WwFs="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.5lzr8ub7nn.css",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\css\\styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2953"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6Zw8mzqrGPAwDpR2cNJ4xDJxGMbpS3rdmUDSoEkSrbc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5lzr8ub7nn"
+        },
+        {
+          "Name": "label",
+          "Value": "css/styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6Zw8mzqrGPAwDpR2cNJ4xDJxGMbpS3rdmUDSoEkSrbc="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.css",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\css\\styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2953"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6Zw8mzqrGPAwDpR2cNJ4xDJxGMbpS3rdmUDSoEkSrbc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6Zw8mzqrGPAwDpR2cNJ4xDJxGMbpS3rdmUDSoEkSrbc="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ifv42okdf2.png",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ifv42okdf2"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.png",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "guslinks.bundle.scp.css",
+      "AssetFile": "C:\\@project\\guslinks\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\guslinks.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3716"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"83p5Ys8xo5FQ0q7Sibisb1UVR2CY6TNPsWNPYb5seNU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 14:13:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-83p5Ys8xo5FQ0q7Sibisb1UVR2CY6TNPsWNPYb5seNU="
+        }
+      ]
+    },
+    {
+      "Route": "guslinks.jwixluvd8h.bundle.scp.css",
+      "AssetFile": "C:\\@project\\guslinks\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\guslinks.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3716"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"83p5Ys8xo5FQ0q7Sibisb1UVR2CY6TNPsWNPYb5seNU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 14:13:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jwixluvd8h"
+        },
+        {
+          "Name": "label",
+          "Value": "guslinks.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-83p5Ys8xo5FQ0q7Sibisb1UVR2CY6TNPsWNPYb5seNU="
+        }
+      ]
+    },
+    {
+      "Route": "guslinks.jwixluvd8h.styles.css",
+      "AssetFile": "C:\\@project\\guslinks\\obj\\Release\\net8.0\\scopedcss\\bundle\\guslinks.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3716"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"83p5Ys8xo5FQ0q7Sibisb1UVR2CY6TNPsWNPYb5seNU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 14:13:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jwixluvd8h"
+        },
+        {
+          "Name": "label",
+          "Value": "guslinks.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-83p5Ys8xo5FQ0q7Sibisb1UVR2CY6TNPsWNPYb5seNU="
+        }
+      ]
+    },
+    {
+      "Route": "guslinks.styles.css",
+      "AssetFile": "C:\\@project\\guslinks\\obj\\Release\\net8.0\\scopedcss\\bundle\\guslinks.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3716"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"83p5Ys8xo5FQ0q7Sibisb1UVR2CY6TNPsWNPYb5seNU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 14:13:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-83p5Ys8xo5FQ0q7Sibisb1UVR2CY6TNPsWNPYb5seNU="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/fundo/hiperespaco.4efgnkbnm5.png",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\imagens\\fundo\\hiperespaco.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "673080"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7GjVi0GcKOIKR2N4/PuKlPAexZDGSL0RFRR5LerONKk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4efgnkbnm5"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/fundo/hiperespaco.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7GjVi0GcKOIKR2N4/PuKlPAexZDGSL0RFRR5LerONKk="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/fundo/hiperespaco.png",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\imagens\\fundo\\hiperespaco.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "673080"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7GjVi0GcKOIKR2N4/PuKlPAexZDGSL0RFRR5LerONKk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7GjVi0GcKOIKR2N4/PuKlPAexZDGSL0RFRR5LerONKk="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/fundo/nebulosa_4.eh37h1tj1k.png",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\imagens\\fundo\\nebulosa_4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1114954"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ng1oTFcGPQCRAEkbbRzib0RvPBPl1eqqTsXMWnD31O4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "eh37h1tj1k"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/fundo/nebulosa_4.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ng1oTFcGPQCRAEkbbRzib0RvPBPl1eqqTsXMWnD31O4="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/fundo/nebulosa_4.png",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\imagens\\fundo\\nebulosa_4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1114954"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ng1oTFcGPQCRAEkbbRzib0RvPBPl1eqqTsXMWnD31O4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ng1oTFcGPQCRAEkbbRzib0RvPBPl1eqqTsXMWnD31O4="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/fundo/reed_caules.jpg",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\imagens\\fundo\\reed_caules.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1707179"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+fbdHMtfxa4JsZjWywjTMiJPCUYxjZDOwmAuvctv5nI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+fbdHMtfxa4JsZjWywjTMiJPCUYxjZDOwmAuvctv5nI="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/fundo/reed_caules.llrx9tntnz.jpg",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\imagens\\fundo\\reed_caules.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1707179"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+fbdHMtfxa4JsZjWywjTMiJPCUYxjZDOwmAuvctv5nI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "llrx9tntnz"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/fundo/reed_caules.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+fbdHMtfxa4JsZjWywjTMiJPCUYxjZDOwmAuvctv5nI="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/fundo/textura_fibras.png",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\imagens\\fundo\\textura_fibras.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1307343"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pLvEONWSMFcgtAwHn6luQZeu3hzmJNknbaur5wM0eck=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pLvEONWSMFcgtAwHn6luQZeu3hzmJNknbaur5wM0eck="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/fundo/textura_fibras.s6vr1906qu.png",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\imagens\\fundo\\textura_fibras.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1307343"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pLvEONWSMFcgtAwHn6luQZeu3hzmJNknbaur5wM0eck=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s6vr1906qu"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/fundo/textura_fibras.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pLvEONWSMFcgtAwHn6luQZeu3hzmJNknbaur5wM0eck="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/fundo/via_lactea.2xx5a2ynr4.png",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\imagens\\fundo\\via_lactea.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1649976"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ClODnbYmj3m7f+TQWJu34FxRmQ/DqVUS585BdrTsKiw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2xx5a2ynr4"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/fundo/via_lactea.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ClODnbYmj3m7f+TQWJu34FxRmQ/DqVUS585BdrTsKiw="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/fundo/via_lactea.png",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\imagens\\fundo\\via_lactea.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1649976"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ClODnbYmj3m7f+TQWJu34FxRmQ/DqVUS585BdrTsKiw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ClODnbYmj3m7f+TQWJu34FxRmQ/DqVUS585BdrTsKiw="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/perfil.4cc3md6ol5.png",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\imagens\\perfil.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "87442"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zBT21zGGkXacsS9GimXv8p7GDQ+tHMzQRrkahSoZR98=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4cc3md6ol5"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/perfil.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zBT21zGGkXacsS9GimXv8p7GDQ+tHMzQRrkahSoZR98="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/perfil.png",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\imagens\\perfil.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "87442"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zBT21zGGkXacsS9GimXv8p7GDQ+tHMzQRrkahSoZR98=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zBT21zGGkXacsS9GimXv8p7GDQ+tHMzQRrkahSoZR98="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/perfil/1.jikznsoqjk.png",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\imagens\\perfil\\1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18191"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZUYQ2dJKK9/kD6sB33rmw6UGnYP9iD/JM4oF+DIcs0s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jikznsoqjk"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/perfil/1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZUYQ2dJKK9/kD6sB33rmw6UGnYP9iD/JM4oF+DIcs0s="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/perfil/1.png",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\imagens\\perfil\\1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18191"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZUYQ2dJKK9/kD6sB33rmw6UGnYP9iD/JM4oF+DIcs0s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZUYQ2dJKK9/kD6sB33rmw6UGnYP9iD/JM4oF+DIcs0s="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/perfil/2.png",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\imagens\\perfil\\2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "301164"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cuKVLDliWSz4Ihb/fZQhuUA0VQqmMZucG0Nxom7km6Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cuKVLDliWSz4Ihb/fZQhuUA0VQqmMZucG0Nxom7km6Y="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/perfil/2.u8l4posg52.png",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\imagens\\perfil\\2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "301164"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cuKVLDliWSz4Ihb/fZQhuUA0VQqmMZucG0Nxom7km6Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u8l4posg52"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/perfil/2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cuKVLDliWSz4Ihb/fZQhuUA0VQqmMZucG0Nxom7km6Y="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/perfil/sem_img.si65cpehxh.svg",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\imagens\\perfil\\sem_img.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "347"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vJ909ASDAVbBrg3qEHAWibZ9JVujKMm6ma283ru4BAs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "si65cpehxh"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/perfil/sem_img.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vJ909ASDAVbBrg3qEHAWibZ9JVujKMm6ma283ru4BAs="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/perfil/sem_img.svg",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\imagens\\perfil\\sem_img.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "347"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vJ909ASDAVbBrg3qEHAWibZ9JVujKMm6ma283ru4BAs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vJ909ASDAVbBrg3qEHAWibZ9JVujKMm6ma283ru4BAs="
+        }
+      ]
+    },
+    {
+      "Route": "js/bootstrap.bundle.min.hd3gran6i8.js",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80727"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6zfk2L8R3wCgRbZzpkEi7UYC2bc6fYGIgFfNeqyOWnQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hd3gran6i8"
+        },
+        {
+          "Name": "label",
+          "Value": "js/bootstrap.bundle.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6zfk2L8R3wCgRbZzpkEi7UYC2bc6fYGIgFfNeqyOWnQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/bootstrap.bundle.min.js",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80727"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6zfk2L8R3wCgRbZzpkEi7UYC2bc6fYGIgFfNeqyOWnQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6zfk2L8R3wCgRbZzpkEi7UYC2bc6fYGIgFfNeqyOWnQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/bootstrap.bundle.min.js.iovd86k7lj.map",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\js\\bootstrap.bundle.min.js.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "332090"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Xj4HYxZBQ7qqHKBwa2EAugRS+RHWzpcTtI49vgezUSU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iovd86k7lj"
+        },
+        {
+          "Name": "label",
+          "Value": "js/bootstrap.bundle.min.js.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Xj4HYxZBQ7qqHKBwa2EAugRS+RHWzpcTtI49vgezUSU="
+        }
+      ]
+    },
+    {
+      "Route": "js/bootstrap.bundle.min.js.map",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\js\\bootstrap.bundle.min.js.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "332090"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Xj4HYxZBQ7qqHKBwa2EAugRS+RHWzpcTtI49vgezUSU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Xj4HYxZBQ7qqHKBwa2EAugRS+RHWzpcTtI49vgezUSU="
+        }
+      ]
+    },
+    {
+      "Route": "js/bootstrap.min.4d85u1mtcx.js",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\js\\bootstrap.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "60641"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aCTIqw9op0XQGYnNe1649V7fnihACD48OP3M8BP2xVM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4d85u1mtcx"
+        },
+        {
+          "Name": "label",
+          "Value": "js/bootstrap.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aCTIqw9op0XQGYnNe1649V7fnihACD48OP3M8BP2xVM="
+        }
+      ]
+    },
+    {
+      "Route": "js/bootstrap.min.js",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\js\\bootstrap.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "60641"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aCTIqw9op0XQGYnNe1649V7fnihACD48OP3M8BP2xVM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aCTIqw9op0XQGYnNe1649V7fnihACD48OP3M8BP2xVM="
+        }
+      ]
+    },
+    {
+      "Route": "js/bootstrap.min.js.0j3bgjxly4.map",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\js\\bootstrap.min.js.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "220561"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZI01e/ns473GKvACG4McggJdxvFfFIw4xspwQiG8Ye4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0j3bgjxly4"
+        },
+        {
+          "Name": "label",
+          "Value": "js/bootstrap.min.js.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZI01e/ns473GKvACG4McggJdxvFfFIw4xspwQiG8Ye4="
+        }
+      ]
+    },
+    {
+      "Route": "js/bootstrap.min.js.map",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\js\\bootstrap.min.js.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "220561"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZI01e/ns473GKvACG4McggJdxvFfFIw4xspwQiG8Ye4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZI01e/ns473GKvACG4McggJdxvFfFIw4xspwQiG8Ye4="
+        }
+      ]
+    }
+  ]
+}
