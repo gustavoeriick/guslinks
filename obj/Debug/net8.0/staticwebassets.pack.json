@@ -1,79 +1,79 @@
 {
   "Files": [
     {
-      "Id": "C:\\@study\\guslinks\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\guslinks.bundle.scp.css",
-      "PackagePath": "staticwebassets\\guslinks.bundle.scp.css"
+      "Id": "C:\\@project\\guslinks\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\guslinks.bundle.scp.css",
+      "PackagePath": "staticwebassets\\guslinks.jwixluvd8h.bundle.scp.css"
     },
     {
-      "Id": "C:\\@study\\guslinks\\wwwroot\\app.css",
+      "Id": "C:\\@project\\guslinks\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },
     {
-      "Id": "C:\\@study\\guslinks\\wwwroot\\css\\bootstrap.min.css",
+      "Id": "C:\\@project\\guslinks\\wwwroot\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\@study\\guslinks\\wwwroot\\css\\bootstrap.min.css.map",
+      "Id": "C:\\@project\\guslinks\\wwwroot\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\@study\\guslinks\\wwwroot\\css\\styles.css",
+      "Id": "C:\\@project\\guslinks\\wwwroot\\css\\styles.css",
       "PackagePath": "staticwebassets\\css\\styles.css"
     },
     {
-      "Id": "C:\\@study\\guslinks\\wwwroot\\favicon.png",
+      "Id": "C:\\@project\\guslinks\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\@study\\guslinks\\wwwroot\\imagens\\fundo\\hiperespaco.png",
+      "Id": "C:\\@project\\guslinks\\wwwroot\\imagens\\fundo\\hiperespaco.png",
       "PackagePath": "staticwebassets\\imagens\\fundo\\hiperespaco.png"
     },
     {
-      "Id": "C:\\@study\\guslinks\\wwwroot\\imagens\\fundo\\nebulosa_4.png",
+      "Id": "C:\\@project\\guslinks\\wwwroot\\imagens\\fundo\\nebulosa_4.png",
       "PackagePath": "staticwebassets\\imagens\\fundo\\nebulosa_4.png"
     },
     {
-      "Id": "C:\\@study\\guslinks\\wwwroot\\imagens\\fundo\\reed_caules.jpg",
+      "Id": "C:\\@project\\guslinks\\wwwroot\\imagens\\fundo\\reed_caules.jpg",
       "PackagePath": "staticwebassets\\imagens\\fundo\\reed_caules.jpg"
     },
     {
-      "Id": "C:\\@study\\guslinks\\wwwroot\\imagens\\fundo\\textura_fibras.png",
+      "Id": "C:\\@project\\guslinks\\wwwroot\\imagens\\fundo\\textura_fibras.png",
       "PackagePath": "staticwebassets\\imagens\\fundo\\textura_fibras.png"
     },
     {
-      "Id": "C:\\@study\\guslinks\\wwwroot\\imagens\\fundo\\via_lactea.png",
+      "Id": "C:\\@project\\guslinks\\wwwroot\\imagens\\fundo\\via_lactea.png",
       "PackagePath": "staticwebassets\\imagens\\fundo\\via_lactea.png"
     },
     {
-      "Id": "C:\\@study\\guslinks\\wwwroot\\imagens\\perfil.png",
+      "Id": "C:\\@project\\guslinks\\wwwroot\\imagens\\perfil.png",
       "PackagePath": "staticwebassets\\imagens\\perfil.png"
     },
     {
-      "Id": "C:\\@study\\guslinks\\wwwroot\\imagens\\perfil\\1.png",
+      "Id": "C:\\@project\\guslinks\\wwwroot\\imagens\\perfil\\1.png",
       "PackagePath": "staticwebassets\\imagens\\perfil\\1.png"
     },
     {
-      "Id": "C:\\@study\\guslinks\\wwwroot\\imagens\\perfil\\2.png",
+      "Id": "C:\\@project\\guslinks\\wwwroot\\imagens\\perfil\\2.png",
       "PackagePath": "staticwebassets\\imagens\\perfil\\2.png"
     },
     {
-      "Id": "C:\\@study\\guslinks\\wwwroot\\imagens\\perfil\\sem_img.svg",
+      "Id": "C:\\@project\\guslinks\\wwwroot\\imagens\\perfil\\sem_img.svg",
       "PackagePath": "staticwebassets\\imagens\\perfil\\sem_img.svg"
     },
     {
-      "Id": "C:\\@study\\guslinks\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\@project\\guslinks\\wwwroot\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\@study\\guslinks\\wwwroot\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\@project\\guslinks\\wwwroot\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\@study\\guslinks\\wwwroot\\js\\bootstrap.min.js",
+      "Id": "C:\\@project\\guslinks\\wwwroot\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\@study\\guslinks\\wwwroot\\js\\bootstrap.min.js.map",
+      "Id": "C:\\@project\\guslinks\\wwwroot\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js.map"
     },
     {
@@ -87,6 +87,10 @@
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.guslinks.props",
       "PackagePath": "buildTransitive\\guslinks.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.guslinks.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.guslinks.Microsoft.AspNetCore.StaticWebAssets.props",
