@@ -52,9 +52,8 @@
 	</div>
 }
 
-@if (!CadastroFinalizado)
+@if (CadastroFinalizado)
 {
-	Usuario.url = "gusteste";
 	string url_final = $"http://gus.app.br/{Usuario.url}";
 
 	<div class="alert alert-success" role="alert">

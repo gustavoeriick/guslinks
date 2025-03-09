@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\@project\\guslinks\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3EBFB140-549B-454C-989E-800D44795D1B}|guslinks.csproj|c:\\@project\\guslinks\\components\\pages\\cadastro.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3EBFB140-549B-454C-989E-800D44795D1B}|guslinks.csproj|solutionrelative:components\\pages\\cadastro.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Cadastro.razor",
+              "DocumentMoniker": "C:\\@project\\guslinks\\Components\\Pages\\Cadastro.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Cadastro.razor",
+              "ToolTip": "C:\\@project\\guslinks\\Components\\Pages\\Cadastro.razor",
+              "RelativeToolTip": "Components\\Pages\\Cadastro.razor",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-09T23:38:21.189Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
