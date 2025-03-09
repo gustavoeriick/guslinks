@@ -64,13 +64,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\guslinks.jwixluvd8h.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-83p5Ys8xo5FQ0q7Sibisb1UVR2CY6TNPsWNPYb5seNU="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3716"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u002283p5Ys8xo5FQ0q7Sibisb1UVR2CY6TNPsWNPYb5seNU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Mar 2025 14:13:42 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3716"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u002283p5Ys8xo5FQ0q7Sibisb1UVR2CY6TNPsWNPYb5seNU=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Mar 2025 19:26:53 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/guslinks/guslinks.jwixluvd8h.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\guslinks.jwixluvd8h.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"jwixluvd8h"},{"Name":"integrity","Value":"sha256-83p5Ys8xo5FQ0q7Sibisb1UVR2CY6TNPsWNPYb5seNU="},{"Name":"label","Value":"_content/guslinks/guslinks.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3716"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u002283p5Ys8xo5FQ0q7Sibisb1UVR2CY6TNPsWNPYb5seNU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Mar 2025 14:13:42 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3716"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u002283p5Ys8xo5FQ0q7Sibisb1UVR2CY6TNPsWNPYb5seNU=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Mar 2025 19:26:53 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/guslinks/imagens/fundo/hiperespaco.4efgnkbnm5.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\imagens\fundo\hiperespaco.png'))</AssetFile>

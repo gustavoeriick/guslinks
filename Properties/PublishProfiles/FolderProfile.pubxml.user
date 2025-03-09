@@ -2,8 +2,8 @@
 <!-- https://go.microsoft.com/fwlink/?LinkID=208121. -->
 <Project>
   <PropertyGroup>
-    <_PublishTargetUrl>C:\inetpub\wwwroot\guslink</_PublishTargetUrl>
-    <History>False|2025-03-08T14:25:53.4897978Z||;False|2025-03-08T11:18:02.7721717-03:00||;False|2025-03-08T11:13:49.7385016-03:00||;</History>
+    <_PublishTargetUrl>C:\@project\guslinks\bin\Release\net8.0\publish\</_PublishTargetUrl>
+    <History>True|2025-03-09T20:46:52.6127587Z||;True|2025-03-09T17:29:17.1647839-03:00||;</History>
     <LastFailureDetails />
   </PropertyGroup>
 </Project>

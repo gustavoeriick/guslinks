@@ -5,7 +5,7 @@
 	<img class="img-perfil" src="imagens/perfil.png" />
 </div>
 
-<div class="nome-perfil pb-2">GusLinks</div>
+<div class="nome-perfil pb-2">GusApp</div>
 
 @if (!CadastroFinalizado)
 {
@@ -16,7 +16,7 @@
 			<div class="cadastro-infos-itens"><i class="bi bi-check"></i> Máximo de 100 caracteres</div>
 			<div class="cadastro-infos-itens"><i class="bi bi-check"></i> Permitido apenas letras e números</div>
 		</div>
-		<label class="floatingInput" for="floatingInput">Nome</label>
+		<label class="floatingInput" for="floatingInput">Título da sua página</label>
 	</div>
 	<div class="form-floating mb-3">
 		<input type="text" class="form-control @validacaoUrl" id="url" placeholder="" @bind-value="Usuario.url">
@@ -52,10 +52,19 @@
 	</div>
 }
 
-@if (CadastroFinalizado)
+@if (!CadastroFinalizado)
 {
+	Usuario.url = "gusteste";
+	string url_final = $"http://gus.app.br/{Usuario.url}";
+
 	<div class="alert alert-success" role="alert">
-		Cadastro realizado com sucesso!
+		<b>Cadastro realizado com sucesso!</b><br />
+		O seu GusApp já disponível clicando <a href="@url_final"><b>aqui!</b></a>
+	</div>
+
+	<div class="alert alert-warning" role="alert">
+		<b>Não esqueça de ativar o seu cadastro</b> através do link que enviamos para o seu e-mail!<br />
+		Depois de ativar, acesse o painel, clicando <a href="/Login"><b>aqui</b></a> e personalize o seu GusApp.<br />
 	</div>
 }
 
@@ -68,5 +77,5 @@
 
 @if (!CadastroFinalizado)
 {
-	<button type="button" class="cadastro-finalizar mt-3" @onclick="Criar">Criar seu GusLinks!</button>
+	<button type="button" class="cadastro-finalizar mt-3" @onclick="Criar">Criar seu GusApp!</button>
 }
