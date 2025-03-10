@@ -54,16 +54,14 @@
 
 @if (CadastroFinalizado)
 {
-	string url_final = $"http://gus.app.br/{Usuario.url}";
-
 	<div class="alert alert-success" role="alert">
 		<b>Cadastro realizado com sucesso!</b><br />
-		O seu GusApp já disponível clicando <a href="@url_final"><b>aqui!</b></a>
+		O seu GusApp já disponível clicando <a href="@UrlFinal" target="_blank"><b>aqui!</b></a>
 	</div>
 
 	<div class="alert alert-warning" role="alert">
 		<b>Não esqueça de ativar o seu cadastro</b> através do link que enviamos para o seu e-mail!<br />
-		Depois de ativar, acesse o painel, clicando <a href="/Login"><b>aqui</b></a> e personalize o seu GusApp.<br />
+		Depois de ativar, acesse o painel, clicando <a href="/Login" target="_blank"><b>aqui</b></a> e personalize o seu GusApp.<br />
 	</div>
 }
 

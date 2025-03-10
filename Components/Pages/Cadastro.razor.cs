@@ -29,6 +29,8 @@ namespace guslinks.Components.Pages
 
 		public bool CadastroFinalizado = false;
 
+		public string UrlFinal { get; set; } = "";
+
 		protected override async Task OnInitializedAsync()
 		{
 			Usuario = new();
@@ -376,6 +378,8 @@ namespace guslinks.Components.Pages
                         await cont.InsertAsync(contatos);
                         await InvokeAsync(StateHasChanged);
                     }
+
+					UrlFinal = $"http://gus.app.br/{Usuario.url}";
 
                     Usuario = new();
 

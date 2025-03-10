@@ -3,7 +3,7 @@
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>C:\@project\guslinks\bin\Release\net8.0\publish\</_PublishTargetUrl>
-    <History>True|2025-03-09T23:32:05.7616202Z||;True|2025-03-09T17:46:52.6127587-03:00||;True|2025-03-09T17:29:17.1647839-03:00||;</History>
+    <History>True|2025-03-10T11:56:57.5663473Z||;True|2025-03-10T08:54:14.1922908-03:00||;True|2025-03-10T08:53:55.1322181-03:00||;True|2025-03-10T08:45:58.0313303-03:00||;True|2025-03-09T20:32:05.7616202-03:00||;True|2025-03-09T17:46:52.6127587-03:00||;True|2025-03-09T17:29:17.1647839-03:00||;</History>
     <LastFailureDetails />
   </PropertyGroup>
 </Project>
