@@ -1,0 +1,132 @@
+﻿<!-- CssValor: Background -->
+@if (NomeCssValor == "config.planofundo_cor" && !string.IsNullOrEmpty(CssValor))
+{
+    <style>
+        html, body {
+            background-color:@CssValor;
+        }
+     </style>
+}
+
+@if (NomeCssValor == "config.planofundo_img" && !string.IsNullOrEmpty(CssValor))
+{
+    <style>
+        html, body {
+            background-image: url("/imagens/fundo/@CssValor");
+        }
+    </style>
+}
+
+<!-- CssValor: Perfil -->
+@if (NomeCssValor == "config.imgperfil_borda_cor" && !string.IsNullOrEmpty(CssValor))
+{
+    <style>
+        .box-img-perfil {
+            border-color:@CssValor;
+        }
+    </style>
+}
+
+@if (NomeCssValor == "config.nome_fonte" && !string.IsNullOrEmpty(CssValor))
+{
+    <style>
+        .nome-perfil {
+            font-family:@CssValor;
+        }
+    </style>
+}
+
+@if (NomeCssValor == "config.nome_cor" && !string.IsNullOrEmpty(CssValor))
+{
+    <style>
+        .nome-perfil {
+            color:@CssValor;
+        }
+    </style>
+}
+
+@if (NomeCssValor == "config.texto_fonte" && !string.IsNullOrEmpty(CssValor))
+{
+    <style>
+        .texto-perfil {
+            font-family:@CssValor;
+        }
+    </style>
+}
+
+@if (NomeCssValor == "config.texto_cor" && !string.IsNullOrEmpty(CssValor))
+{
+    <style>
+        .texto-perfil {
+            color: @CssValor;
+        }
+    </style>
+}
+
+<!-- CssValor: Botões links -->
+@if (NomeCssValor == "config.link_texto_cor" && !string.IsNullOrEmpty(CssValor))
+{
+    <style>
+        .links {
+            color:@CssValor;
+        }
+    </style>
+}
+
+@if (NomeCssValor == "config.link_fundo_cor" && !string.IsNullOrEmpty(CssValor))
+{
+    <style>
+        .bt-links {
+            background-color: @CssValor;
+        }
+    </style>
+}
+
+@if (NomeCssValor == "config.link_borda_cor" && !string.IsNullOrEmpty(CssValor))
+{
+    <style>
+        .bt-links {
+            border-color:@CssValor;
+        }
+    </style>
+}
+
+@if (NomeCssValor == "config.link_texto_fonte" && !string.IsNullOrEmpty(CssValor))
+{
+    <style>
+        .bt-links {
+            font-family:@CssValor;
+        }
+    </style>
+}
+
+<!-- CssValor: Ícones -->
+@if (NomeCssValor == "config.icone_cor" && !string.IsNullOrEmpty(CssValor))
+{
+    <style>
+        .bi {
+            color:@CssValor;
+        }
+    </style>
+}
+
+<!-- CssValor: Rodapé -->
+@if (NomeCssValor == "config.nome_cor" && !string.IsNullOrEmpty(CssValor))
+{
+    <style>
+        .texto-rodape {
+            color:@CssValor;
+        }
+    </style>
+
+    <style>
+        .link-rodape {
+            color:@CssValor;
+        }
+    </style>
+}
+
+@code {
+    [Parameter] public string NomeCssValor { get; set; }
+    [Parameter] public string CssValor { get; set; }
+}

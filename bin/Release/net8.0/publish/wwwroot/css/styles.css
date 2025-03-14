@@ -95,6 +95,8 @@ html,body {
     height: 70px;
     margin-bottom: 15px;
     border-radius: 10px;
+    padding: 10px;
+    text-align: center;
 }
 
 .bi {

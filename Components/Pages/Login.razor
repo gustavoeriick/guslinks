@@ -1,11 +1,8 @@
 ﻿@page "/Login"
 @inherits LoginBase
+@using guslinks.Componentes
 
-<div class="box-img-perfil">
-	<img class="img-perfil" src="imagens/perfil.png" />
-</div>
-
-<div class="nome-perfil pb-2">GusApp</div>
+<HeaderGusApp />
 
 <div class="form-floating mb-3">
 	<input type="email" class="form-control" id="email" placeholder="" @bind-value="usuario.email">

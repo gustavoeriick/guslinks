@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cClW/8o2PMitjhyn0F3QPvWv5Y8AAripNnOsx6s+Qgk=",
+  "Hash": "3+kTdfvB93V1qo4ojixS3ttNztKU5Xh1bTy+40A6bIM=",
   "Source": "guslinks",
   "BasePath": "_content/guslinks",
   "Mode": "Default",
@@ -136,8 +136,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "5lzr8ub7nn",
-      "Integrity": "6Zw8mzqrGPAwDpR2cNJ4xDJxGMbpS3rdmUDSoEkSrbc=",
+      "Fingerprint": "oi4ekwegrh",
+      "Integrity": "YAI1hgI74AJzLAoeIYIWFHZkDGHznqQQH8rk79SGwWM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\styles.css"
@@ -685,51 +685,6 @@
       ]
     },
     {
-      "Route": "css/styles.5lzr8ub7nn.css",
-      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\css\\styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2953"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"6Zw8mzqrGPAwDpR2cNJ4xDJxGMbpS3rdmUDSoEkSrbc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "5lzr8ub7nn"
-        },
-        {
-          "Name": "label",
-          "Value": "css/styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-6Zw8mzqrGPAwDpR2cNJ4xDJxGMbpS3rdmUDSoEkSrbc="
-        }
-      ]
-    },
-    {
       "Route": "css/styles.css",
       "AssetFile": "C:\\@project\\guslinks\\wwwroot\\css\\styles.css",
       "Selectors": [],
@@ -740,7 +695,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2953"
+          "Value": "2998"
         },
         {
           "Name": "Content-Type",
@@ -748,11 +703,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6Zw8mzqrGPAwDpR2cNJ4xDJxGMbpS3rdmUDSoEkSrbc=\""
+          "Value": "\"YAI1hgI74AJzLAoeIYIWFHZkDGHznqQQH8rk79SGwWM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+          "Value": "Fri, 14 Mar 2025 00:25:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -762,7 +717,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-6Zw8mzqrGPAwDpR2cNJ4xDJxGMbpS3rdmUDSoEkSrbc="
+          "Value": "sha256-YAI1hgI74AJzLAoeIYIWFHZkDGHznqQQH8rk79SGwWM="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.oi4ekwegrh.css",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\css\\styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2998"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YAI1hgI74AJzLAoeIYIWFHZkDGHznqQQH8rk79SGwWM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Mar 2025 00:25:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oi4ekwegrh"
+        },
+        {
+          "Name": "label",
+          "Value": "css/styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YAI1hgI74AJzLAoeIYIWFHZkDGHznqQQH8rk79SGwWM="
         }
       ]
     },
@@ -871,7 +871,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+          "Value": "Fri, 14 Mar 2025 00:31:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -908,7 +908,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+          "Value": "Fri, 14 Mar 2025 00:31:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -953,7 +953,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+          "Value": "Fri, 14 Mar 2025 00:31:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -998,7 +998,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 12:48:53 GMT"
+          "Value": "Fri, 14 Mar 2025 00:31:03 GMT"
         },
         {
           "Name": "Cache-Control",

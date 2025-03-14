@@ -1,11 +1,8 @@
 ﻿@page "/Cadastro"
 @inherits CadastroBase;
+@using guslinks.Componentes
 
-<div class="box-img-perfil">
-	<img class="img-perfil" src="imagens/perfil.png" />
-</div>
-
-<div class="nome-perfil pb-2">GusApp</div>
+<HeaderGusApp />
 
 @if (!CadastroFinalizado)
 {
