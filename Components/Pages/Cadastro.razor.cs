@@ -385,8 +385,8 @@ namespace guslinks.Components.Pages
                     }
 
                     string Assunto = "Gus App - Verifique o seu cadastro!";
-					string Link_validacao = $"https://localhost:7125/Verifica/{token_validacao}";
-                    //string Link_validacao = $"https://gus.app.br/Verifica/{token_validacao}";
+					//string Link_validacao = $"https://localhost:7125/Verifica/{token_validacao}";
+                    string Link_validacao = $"https://gus.app.br/Verifica/{token_validacao}";
                     string Corpo = $@"Olá!<br>
 										<b>Este é um e-mail automático!</b><br>
 										<b>Por gentileza, não responder.</b>
