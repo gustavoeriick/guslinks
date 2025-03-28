@@ -1559,6 +1559,88 @@
           "Value": "sha256-ZI01e/ns473GKvACG4McggJdxvFfFIw4xspwQiG8Ye4="
         }
       ]
+    },
+    {
+      "Route": "js/functions.gg9t17v7o6.js",
+      "AssetFile": "js/functions.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "294"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IKK/VkGZfRJ44OMVj6s+4quqNr2D15vATuTuLbKyVjc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Mar 2025 01:24:15 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gg9t17v7o6"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IKK/VkGZfRJ44OMVj6s+4quqNr2D15vATuTuLbKyVjc="
+        },
+        {
+          "Name": "label",
+          "Value": "js/functions.js"
+        }
+      ]
+    },
+    {
+      "Route": "js/functions.js",
+      "AssetFile": "js/functions.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "294"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IKK/VkGZfRJ44OMVj6s+4quqNr2D15vATuTuLbKyVjc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Mar 2025 01:24:15 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IKK/VkGZfRJ44OMVj6s+4quqNr2D15vATuTuLbKyVjc="
+        }
+      ]
     }
   ]
 }

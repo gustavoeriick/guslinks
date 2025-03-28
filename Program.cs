@@ -10,6 +10,7 @@ builder.Services.AddRazorComponents()
 
 // Adiciona os serviços de autenticação
 builder.Services.AddAuthorizationCore();
+builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthenticationStateProvider>();
 builder.Services.AddScoped<CustomAuthenticationStateProvider>();
 
 var app = builder.Build();

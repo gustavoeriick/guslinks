@@ -13,6 +13,15 @@
 	<label class="floatingInput" for="floatingPassword">Senha</label>
 </div>
 
+@if (Loading)
+{
+	<div class="d-flex justify-content-center pt-3">
+		<div class="spinner-border" role="status">
+			@* <span class="visually-hidden">Loading...</span> *@
+		</div>
+	</div>
+}
+
 @if (Erro)
 {
 	<div class="alert alert-danger mt-3" role="alert">

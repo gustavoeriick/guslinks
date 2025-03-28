@@ -2,8 +2,22 @@
 <!-- https://go.microsoft.com/fwlink/?LinkID=208121. -->
 <Project>
   <PropertyGroup>
-    <_PublishTargetUrl>C:\@project\guslinks\bin\Release\net8.0\publish\</_PublishTargetUrl>
+    <_PublishTargetUrl>bin\Release\net8.0\publish\</_PublishTargetUrl>
     <History>True|2025-03-18T13:08:47.1314354Z||;True|2025-03-13T21:31:36.5947280-03:00||;True|2025-03-10T08:56:57.5663473-03:00||;True|2025-03-10T08:54:14.1922908-03:00||;True|2025-03-10T08:53:55.1322181-03:00||;True|2025-03-10T08:45:58.0313303-03:00||;True|2025-03-09T20:32:05.7616202-03:00||;True|2025-03-09T17:46:52.6127587-03:00||;True|2025-03-09T17:29:17.1647839-03:00||;</History>
     <LastFailureDetails />
   </PropertyGroup>
+  <ItemGroup>
+    <File Include="wwwroot/js/bootstrap.bundle.min.js">
+      <publishTime>03/08/2025 09:48:53</publishTime>
+    </File>
+    <File Include="wwwroot/js/bootstrap.bundle.min.js.map">
+      <publishTime>03/08/2025 09:48:53</publishTime>
+    </File>
+    <File Include="wwwroot/js/bootstrap.min.js">
+      <publishTime>03/08/2025 09:48:53</publishTime>
+    </File>
+    <File Include="wwwroot/js/bootstrap.min.js.map">
+      <publishTime>03/08/2025 09:48:53</publishTime>
+    </File>
+  </ItemGroup>
 </Project>

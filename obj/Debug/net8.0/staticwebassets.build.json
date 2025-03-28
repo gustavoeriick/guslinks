@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3UUAVrvo1cqPe0ETK4u8jTMgFyNa98OmjzO7kbvABp8=",
+  "Hash": "GH/ETaziImA/i+NAgSV9MvI6YlhtooNOKvLy15A9s4o=",
   "Source": "guslinks",
   "BasePath": "_content/guslinks",
   "Mode": "Default",
@@ -435,6 +435,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Identity": "C:\\@project\\guslinks\\wwwroot\\js\\functions.js",
+      "SourceId": "guslinks",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\@project\\guslinks\\wwwroot\\",
+      "BasePath": "_content/guslinks",
+      "RelativePath": "js/functions#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gg9t17v7o6",
+      "Integrity": "IKK/VkGZfRJ44OMVj6s+4quqNr2D15vATuTuLbKyVjc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\functions.js"
     }
   ],
   "Endpoints": [
@@ -2075,6 +2096,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-ZI01e/ns473GKvACG4McggJdxvFfFIw4xspwQiG8Ye4="
+        }
+      ]
+    },
+    {
+      "Route": "js/functions.gg9t17v7o6.js",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\js\\functions.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "294"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IKK/VkGZfRJ44OMVj6s+4quqNr2D15vATuTuLbKyVjc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Mar 2025 01:24:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gg9t17v7o6"
+        },
+        {
+          "Name": "label",
+          "Value": "js/functions.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IKK/VkGZfRJ44OMVj6s+4quqNr2D15vATuTuLbKyVjc="
+        }
+      ]
+    },
+    {
+      "Route": "js/functions.js",
+      "AssetFile": "C:\\@project\\guslinks\\wwwroot\\js\\functions.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "294"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IKK/VkGZfRJ44OMVj6s+4quqNr2D15vATuTuLbKyVjc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Mar 2025 01:24:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IKK/VkGZfRJ44OMVj6s+4quqNr2D15vATuTuLbKyVjc="
         }
       ]
     }

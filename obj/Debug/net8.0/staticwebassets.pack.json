@@ -77,6 +77,10 @@
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js.map"
     },
     {
+      "Id": "C:\\@project\\guslinks\\wwwroot\\js\\functions.js",
+      "PackagePath": "staticwebassets\\js\\functions.js"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.guslinks.props",
       "PackagePath": "build\\guslinks.props"
     },

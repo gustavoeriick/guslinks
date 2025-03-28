@@ -16,3 +16,4 @@ wwwroot\js\bootstrap.bundle.min.js
 wwwroot\js\bootstrap.bundle.min.js.map
 wwwroot\js\bootstrap.min.js
 wwwroot\js\bootstrap.min.js.map
+wwwroot\js\functions.js
