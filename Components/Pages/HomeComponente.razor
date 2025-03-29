@@ -1,112 +1,115 @@
-﻿@page "/{url}"
+﻿@page "/{Url}"
 @inherits HomeComponenteBase;
 @layout Layout.LayoutSecundario;
+@using guslinks.Componentes.CSS;
 
-    @if (carregarConteudo)
+@if (carregarConteudo)
+{
+    <div class="box-img-perfil">
+        @if (config.tem_img_perfil)
+        {
+            <img class="img-perfil" src="imagens/perfil/@imgPerfil" />
+        }
+        else
+        {
+            <img class="img-perfil" src="imagens/perfil/@imgPerfil" style="filter:brightness(0) saturate(100%) invert(100%) sepia(15%) saturate(7496%) hue-rotate(179deg) brightness(117%) contrast(96%);" />
+        }
+    </div>
+
+    <div class="nome-perfil">@usuario.nome</div>
+
+    <div class="texto-perfil">@usuario.texto</div>
+
+    <div class="ico-links">
+        @foreach (var rede in contatos.OrderBy(c => c.ordem))
+        {
+            string nomeIcone = icones.Where(c => c.id.Equals(rede.idIcone)).FirstOrDefault().icone;
+            string linkBase = icones.Where(c => c.id.Equals(rede.idIcone)).FirstOrDefault().urlBase;
+            string linkCompleto = linkBase + rede.link;
+            <a class="links" href="@linkCompleto"><i class="bi @nomeIcone"></i></a>
+        }
+    </div>
+
+    @foreach (var link in links.OrderBy(c => c.ordem))
     {
-        <div class="box-img-perfil">
-            @if (config.tem_img_perfil)
-            {
-                <img class="img-perfil" src="imagens/perfil/@imgPerfil" />
-            }
-            else
-            {
-                <img class="img-perfil" src="imagens/perfil/@imgPerfil" style="filter:brightness(0) saturate(100%) invert(100%) sepia(15%) saturate(7496%) hue-rotate(179deg) brightness(117%) contrast(96%);" />
-            }
-        </div>
-
-        <div class="nome-perfil">@usuario.nome</div>
-
-        <div class="texto-perfil">@usuario.texto</div>
-
-        <div class="ico-links">
-            @foreach (var rede in contatos.OrderBy(c => c.ordem))
-            {
-                string nomeIcone = icones.Where(c => c.id.Equals(rede.idIcone)).FirstOrDefault().icone;
-                string linkBase = icones.Where(c => c.id.Equals(rede.idIcone)).FirstOrDefault().urlBase;
-                string linkCompleto = linkBase + rede.link;
-                <a class="links" href="@linkCompleto"><i class="bi @nomeIcone"></i></a>
-            }
-        </div>
-
-        @foreach (var link in links.OrderBy(c => c.ordem))
-        {
-            <a class="links" href="@link.link"><div class="bt-links">@link.texto</div></a>
-        }
-
-        <!-- CSS: Background -->
-        @if (!string.IsNullOrEmpty(config.planofundo_cor))
-        {
-            <style>html, body{background-color: @config.planofundo_cor;}</style>
-        }
-
-        @if (!string.IsNullOrEmpty(config.planofundo_img))
-        {
-            <style>html, body {background-image: url("/imagens/fundo/@config.planofundo_img");}</style>
-        }
-
-        <!-- CSS: Perfil -->
-        @if (!string.IsNullOrEmpty(config.imgperfil_borda_cor))
-        {
-            <style>.box-img-perfil {border-color: @config.imgperfil_borda_cor;}</style>
-        }
-
-        @if (!string.IsNullOrEmpty(config.nome_fonte))
-        {
-            <style>.nome-perfil {font-family: @config.nome_fonte;}</style>
-        }
-
-        @if (!string.IsNullOrEmpty(config.nome_fonte))
-        {
-            <style>.nome-perfil {color: @config.nome_cor;}</style>
-        }
-
-        @if (!string.IsNullOrEmpty(config.texto_fonte))
-        {
-            <style>.texto-perfil {font-family: @config.texto_fonte;}</style>
-        }
-
-        @if (!string.IsNullOrEmpty(config.texto_fonte))
-        {
-            <style>.texto-perfil {color: @config.texto_cor;}</style>
-        }
-
-        <!-- CSS: Botões links -->
-        @if (!string.IsNullOrEmpty(config.link_texto_cor))
-        {
-            <style>.links {color: @config.link_texto_cor;}</style>
-        }
-
-        @if (!string.IsNullOrEmpty(config.link_fundo_cor))
-        {
-            <style>.bt-links {background-color: @config.link_fundo_cor;}</style>
-        }
-
-        @if (!string.IsNullOrEmpty(config.link_borda_cor))
-        {
-            <style>.bt-links {border-color: @config.link_borda_cor;}</style>
-        }
-
-        @if (!string.IsNullOrEmpty(config.link_texto_fonte))
-        {
-            <style>.bt-links {font-family: @config.link_texto_fonte;}</style>
-        }
-
-        <!-- CSS: Ícones -->
-        @if (!string.IsNullOrEmpty(config.icone_cor))
-        {
-            <style>.bi {color: @config.icone_cor;}</style>
-        }
-
-        <!-- CSS: Rodapé -->
-        @if (!string.IsNullOrEmpty(config.nome_cor))
-        {
-            <style>.texto-rodape {color: @config.nome_cor;}</style>
-            <style>.link-rodape {color: @config.nome_cor;}</style>
-        }
-
+        <a class="links" href="@link.link"><div class="bt-links">@link.texto</div></a>
     }
-    else
+
+    <!-- CSS: Background -->
+    @if (!string.IsNullOrEmpty(config.planofundo_cor))
+    {
+        <style>html, body{background-color: @config.planofundo_cor;}</style>
+    }
+
+    @if (!string.IsNullOrEmpty(config.planofundo_img))
+    {
+        <style>html, body {background-image: url("/imagens/fundo/@config.planofundo_img");}</style>
+    }
+
+    <!-- CSS: Perfil -->
+    @if (!string.IsNullOrEmpty(config.imgperfil_borda_cor))
+    {
+        <style>.box-img-perfil {border-color: @config.imgperfil_borda_cor;}</style>
+    }
+
+    @if (!string.IsNullOrEmpty(config.nome_fonte))
+    {
+        <style>.nome-perfil {font-family: @config.nome_fonte;}</style>
+    }
+
+    @if (!string.IsNullOrEmpty(config.nome_fonte))
+    {
+        <style>.nome-perfil {color: @config.nome_cor;}</style>
+    }
+
+    @if (!string.IsNullOrEmpty(config.texto_fonte))
+    {
+        <style>.texto-perfil {font-family: @config.texto_fonte;}</style>
+    }
+
+    @if (!string.IsNullOrEmpty(config.texto_fonte))
+    {
+        <style>.texto-perfil {color: @config.texto_cor;}</style>
+    }
+
+    <!-- CSS: Botões links -->
+    @if (!string.IsNullOrEmpty(config.link_texto_cor))
+    {
+        <style>.links {color: @config.link_texto_cor;}</style>
+    }
+
+    @if (!string.IsNullOrEmpty(config.link_fundo_cor))
+    {
+        <style>.bt-links {background-color: @config.link_fundo_cor;}</style>
+    }
+
+    @if (!string.IsNullOrEmpty(config.link_borda_cor))
+    {
+        <style>.bt-links {border-color: @config.link_borda_cor;}</style>
+    }
+
+    @if (!string.IsNullOrEmpty(config.link_texto_fonte))
+    {
+        <style>.bt-links {font-family: @config.link_texto_fonte;}</style>
+    }
+
+    <!-- CSS: Ícones -->
+    @if (!string.IsNullOrEmpty(config.icone_cor))
+    {
+        <style>.bi {color: @config.icone_cor;}</style>
+    }
+
+    <!-- CSS: Rodapé -->
+    @if (!string.IsNullOrEmpty(config.nome_cor))
+    {
+        <style>.texto-rodape {color: @config.nome_cor;}</style>
+        <style>.link-rodape {color: @config.nome_cor;}</style>
+    }
+
+}
+else
+{
+    @if (loading)
     {
         <div class="d-flex justify-content-center">
             <div class="spinner-border" role="status">
@@ -114,3 +117,11 @@
             </div>
         </div>
     }
+    else
+    {
+        <div class="alert alert-danger mt-3" role="alert">
+            <b>Link inválido!</b>
+        </div>
+    }
+
+}

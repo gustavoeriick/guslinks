@@ -1,0 +1,55 @@
+﻿@page "/TesteEmail"
+@using guslinks.Components.Uteis
+@inherits HomeComponenteBase;
+@layout Layout.LayoutSecundario;
+
+<div class="box-img-perfil">
+	<img class="img-perfil" src="imagens/perfil/@imgPerfil" />
+</div>
+
+<div class="nome-perfil">TesteEmail</div>
+
+<div class="texto-perfil">Teste de envio de e-mail SMTP</div>
+
+<div class="bt-links" @onclick="Criar">Enviar</div>
+
+@if (!string.IsNullOrEmpty(RetornoEmail))
+{
+	<div class="alert alert-warning" role="alert">
+		@RetornoEmail
+	</div>
+}
+
+@code {
+
+	public string RetornoEmail { get; set; } = "";
+
+	public async Task Criar()
+	{
+		string token_validacao = Utilitarios.GeraToken();
+		string email_teste = "gustavo.eriick@gmail.com";
+
+		string Assunto = "Gus App - Verifique o seu cadastro!";
+		string Link_validacao = $"https://gus.app.br/Verifica/{token_validacao}";
+		string Corpo = $@"Olá!<br>
+							<b>Este é um e-mail automático!</b><br>
+							<b>Por gentileza, não responder.</b>
+							<br><br>
+							Seu cadastro na Gus App foi realizado com sucesso!<br>
+							Agora vamos verificar o seu cadastro?<br>
+							Para verificar o seu cadastro, basta clicar no link a baixo:<br>
+							<a href='{Link_validacao}' target='_blank'>{Link_validacao}</a>
+							<br><br>
+							<b>Caso não consiga clicar no link, copie e cole no seu navegador!</b><br>
+							<br><br>
+							Atenciosamente,<br>
+							Equipe Gus App
+		";
+
+		List<string> emailList = new List<string>();
+		emailList.Add(email_teste);
+
+		List<System.Net.Mail.Attachment> lsAnexos = new();
+		RetornoEmail = Utilitarios.EnvioEmail(emailList, Corpo, Assunto, true, lsAnexos);
+	}
+}

@@ -1,11 +1,8 @@
 ﻿@page "/Login"
 @inherits LoginBase
+@using guslinks.Componentes
 
-<div class="box-img-perfil">
-	<img class="img-perfil" src="imagens/perfil.png" />
-</div>
-
-<div class="nome-perfil pb-2">GusLinks</div>
+<HeaderGusApp />
 
 <div class="form-floating mb-3">
 	<input type="email" class="form-control" id="email" placeholder="" @bind-value="usuario.email">
@@ -15,6 +12,15 @@
 	<input type="password" class="form-control" id="senha" placeholder="" @bind-value="usuario.senha">
 	<label class="floatingInput" for="floatingPassword">Senha</label>
 </div>
+
+@if (Loading)
+{
+	<div class="d-flex justify-content-center pt-3">
+		<div class="spinner-border" role="status">
+			@* <span class="visually-hidden">Loading...</span> *@
+		</div>
+	</div>
+}
 
 @if (Erro)
 {

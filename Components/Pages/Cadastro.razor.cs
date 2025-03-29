@@ -29,6 +29,8 @@ namespace guslinks.Components.Pages
 
 		public bool CadastroFinalizado = false;
 
+		public string UrlFinal { get; set; } = "";
+
 		protected override async Task OnInitializedAsync()
 		{
 			Usuario = new();
@@ -295,7 +297,9 @@ namespace guslinks.Components.Pages
 
                 if (!Erro)
                 {
-                    var data = DateTime.Now;
+					string token_validacao = Utilitarios.GeraToken();
+
+					var data = DateTime.Now;
 
 					Usuario.senha = PasswordHasher.HashPassword(Usuario.senha);
 					Usuario.texto = "Esse é um texto padrão! Não esqueça de alterar!!";
@@ -305,6 +309,8 @@ namespace guslinks.Components.Pages
                     Usuario.dataatualizacao = data;
                     Usuario.cadastradopor = 0;
                     Usuario.atualizadopor = 0;
+					Usuario.token = token_validacao;
+					Usuario.verificado = false;
 
                     await rep.InsertAsync(Usuario);
                     await InvokeAsync(StateHasChanged);
@@ -368,6 +374,7 @@ namespace guslinks.Components.Pages
                         contatos.link = "gustavoeriick";
                         contatos.idIcone = 1;
                         contatos.ordem = 1;
+						contatos.ativo = true;
                         contatos.datacadastro = data;
                         contatos.dataatualizacao = data;
                         contatos.cadastradopor = 0;
@@ -376,6 +383,32 @@ namespace guslinks.Components.Pages
                         await cont.InsertAsync(contatos);
                         await InvokeAsync(StateHasChanged);
                     }
+
+                    string Assunto = "Gus App - Verifique o seu cadastro!";
+					//string Link_validacao = $"https://localhost:7125/Verifica/{token_validacao}";
+                    string Link_validacao = $"https://gus.app.br/Verifica/{token_validacao}";
+                    string Corpo = $@"Olá!<br>
+										<b>Este é um e-mail automático!</b><br>
+										<b>Por gentileza, não responder.</b>
+										<br><br>
+										Seu cadastro na Gus App foi realizado com sucesso!<br>
+										Agora vamos verificar o seu cadastro?<br>
+										Para verificar o seu cadastro, basta clicar no link a baixo:<br>
+										<a href='{Link_validacao}' target='_blank'>{Link_validacao}</a>
+										<br><br>
+										<b>Caso não consiga clicar no link, copie e cole no seu navegador!</b><br>
+										<br><br>
+										Atenciosamente,<br>
+										Equipe Gus App
+					";
+
+                    List<string> emailList = new List<string>();
+                    emailList.Add(Usuario.email);
+
+                    List<System.Net.Mail.Attachment> lsAnexos = new();
+                    Utilitarios.EnvioEmail(emailList, Corpo, Assunto, true, lsAnexos);
+
+                    UrlFinal = $"http://gus.app.br/{Usuario.url}";
 
                     Usuario = new();
 

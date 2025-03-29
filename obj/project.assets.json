@@ -4476,23 +4476,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gusta\\.nuget\\packages\\": {},
+    "C:\\Users\\Juju\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\@study\\guslinks\\guslinks.csproj",
+      "projectUniqueName": "C:\\@project\\guslinks\\guslinks.csproj",
       "projectName": "guslinks",
-      "projectPath": "C:\\@study\\guslinks\\guslinks.csproj",
-      "packagesPath": "C:\\Users\\gusta\\.nuget\\packages\\",
-      "outputPath": "C:\\@study\\guslinks\\obj\\",
+      "projectPath": "C:\\@project\\guslinks\\guslinks.csproj",
+      "packagesPath": "C:\\Users\\Juju\\.nuget\\packages\\",
+      "outputPath": "C:\\@project\\guslinks\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\gusta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Juju\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4502,18 +4502,17 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.pkg.github.com/sempreodonto/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\@study\\General\\General.csproj": {
-              "projectPath": "C:\\@study\\General\\General.csproj"
+            "C:\\@project\\General\\General.csproj": {
+              "projectPath": "C:\\@project\\General\\General.csproj"
             },
-            "C:\\@study\\Infra.Data\\Infra.Data.csproj": {
-              "projectPath": "C:\\@study\\Infra.Data\\Infra.Data.csproj"
+            "C:\\@project\\Infra.Data\\Infra.Data.csproj": {
+              "projectPath": "C:\\@project\\Infra.Data\\Infra.Data.csproj"
             }
           }
         }

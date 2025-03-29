@@ -13,26 +13,31 @@ namespace guslinks.Components.Pages
 	{
 		public Usuarios usuario { get; set; }
 
+<<<<<<< HEAD
 		[Inject] public TokenAuthenticationProvider authStateProvider { get; set; }
 		[Inject] public NavigationManager navigation { get; set; }
+=======
+		[Inject] public CustomAuthenticationStateProvider Authentication { get; set; }
+		[Inject] public NavigationManager Navigation { get; set; }
+>>>>>>> 3df56d42cd7f9328c7733b5e79f4bae03b22ea46
 
-		public bool Erro = false;
-		public string MensagemErro = "";
+		public bool Loading { get; set; } = false;
+        public bool Erro { get; set; } = false;
+		public string MensagemErro { get; set; } = "";
 
 		protected override async Task OnInitializedAsync()
 		{
 			usuario = new();
 
-			await base.OnInitializedAsync();
-			await InvokeAsync(StateHasChanged);
+			//await base.OnInitializedAsync();
+			//await InvokeAsync(StateHasChanged);
 		}
 
 		public async Task Logar()
 		{
-			Erro = false;
+			Loading = true;
+            Erro = false;
 			MensagemErro = "";
-
-			await InvokeAsync(StateHasChanged);
 
 			// E-mail
 
@@ -40,7 +45,6 @@ namespace guslinks.Components.Pages
 			{
 				Erro = true;
 				MensagemErro = MensagemErro + Uteis.Formatacao.Msg("O preenchimento do campo 'Email' é obrigatório");
-				await InvokeAsync(StateHasChanged);
 			}
 			else
 			{
@@ -50,7 +54,6 @@ namespace guslinks.Components.Pages
 				{
 					Erro = true;
 					MensagemErro = MensagemErro + Uteis.Formatacao.Msg("E-mail inválido!");
-					await InvokeAsync(StateHasChanged);
 				}
 			}
 
@@ -60,7 +63,6 @@ namespace guslinks.Components.Pages
 			{
 				Erro = true;
 				MensagemErro = MensagemErro + Uteis.Formatacao.Msg("O preenchimento do campo 'Senha' é obrigatório");
-				await InvokeAsync(StateHasChanged);
 			}
 			else
 			{
@@ -68,14 +70,12 @@ namespace guslinks.Components.Pages
 				{
 					Erro = true;
 					MensagemErro = MensagemErro + Uteis.Formatacao.Msg("O campo 'Senha' não pode conter menos de 8 caracteres");
-					await InvokeAsync(StateHasChanged);
 				}
 
 				if (usuario.senha.Length > 20)
 				{
 					Erro = true;
 					MensagemErro = MensagemErro + Uteis.Formatacao.Msg("O campo 'Senha' não pode conter mais de 20 caracteres");
-					await InvokeAsync(StateHasChanged);
 				}
 
 				bool retorno = Uteis.Validacoes.ValidarCaracteres2(usuario.senha);
@@ -84,7 +84,6 @@ namespace guslinks.Components.Pages
 				{
 					Erro = true;
 					MensagemErro = MensagemErro + Uteis.Formatacao.Msg("O campo 'Senha' permite letras, números e alguns caracteres especiais (!?#$%&*)");
-					await InvokeAsync(StateHasChanged);
 				}
 			}
 
@@ -107,6 +106,7 @@ namespace guslinks.Components.Pages
 						}
 						else
 						{
+<<<<<<< HEAD
 
 							var token = GeraToken.Gerar();
 
@@ -116,6 +116,11 @@ namespace guslinks.Components.Pages
 								navigation.NavigateTo("/Painel");
 							});
 
+=======
+							// tudo certo
+							await Authentication.Login(usuario.email);
+							Navigation.NavigateTo("/Painel");
+>>>>>>> 3df56d42cd7f9328c7733b5e79f4bae03b22ea46
 						}
 					}
 					else
@@ -123,10 +128,11 @@ namespace guslinks.Components.Pages
 						Erro = true;
 						MensagemErro = MensagemErro + Uteis.Formatacao.Msg("E-mail não cadastrado");
 					}
-
-					await InvokeAsync(StateHasChanged);
 				}
 			}
-		}
+
+			Loading = false;
+
+        }
 	}
 }
