@@ -1,7 +1,9 @@
 ﻿@page "/Painel"
 @using Microsoft.AspNetCore.Authorization
+@using Microsoft.JSInterop
 @using guslinks.Components.Services
-@inject CustomAuthenticationStateProvider AuthStateProvider
+@using guslinks.Components.Uteis
+@inject TokenAuthenticationProvider authStateProvider
 @inject NavigationManager Navigation
 @attribute [Authorize]
 
@@ -11,9 +13,17 @@
 <button type="button" class="cadastro-finalizar mt-3" @onclick="Sair">Sair</button>
 
 @code {
+
+	[Inject] public NavigationManager navigation { get; set; }
+	[Inject] public IJSRuntime JSRuntime { get; set; }
+
 	public async Task Sair()
 	{
-		await AuthStateProvider.Sair();
-        Navigation.NavigateTo("/Login");
+		var login = await JSRuntime.GetFromLocalStorage("t");
+
+		await authStateProvider.Logout(login).ContinueWith((taskwithmessage) =>
+		{
+			navigation.NavigateTo("/");
+		});
 	}
 }

@@ -975,7 +975,10 @@
       "System.Threading.Tasks.Extensions/4.5.4": {},
       "General/1.0.0": {
         "runtime": {
-          "General.dll": {}
+          "General.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Infra.Data/1.0.0": {
@@ -988,7 +991,10 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.4"
         },
         "runtime": {
-          "Infra.Data.dll": {}
+          "Infra.Data.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

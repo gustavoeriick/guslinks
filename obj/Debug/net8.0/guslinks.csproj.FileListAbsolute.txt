@@ -138,7 +138,6 @@ C:\@study\guslinks\bin\Debug\net8.0\Infra.Data.dll
 C:\@study\guslinks\bin\Debug\net8.0\General.pdb
 C:\@study\guslinks\bin\Debug\net8.0\Infra.Data.pdb
 C:\@study\guslinks\obj\Debug\net8.0\guslinks.csproj.AssemblyReference.cache
-C:\@study\guslinks\obj\Debug\net8.0\guslinks.csproj.CopyComplete
 C:\@study\guslinks\bin\Debug\net8.0\Humanizer.dll
 C:\@study\guslinks\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
 C:\@study\guslinks\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -213,3 +212,8 @@ C:\@study\guslinks\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Authorizatio
 C:\@study\guslinks\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
 C:\@study\guslinks\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\@study\guslinks\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\@study\guslinks\bin\Debug\net8.0\guslinks.staticwebassets.endpoints.json
+C:\@study\guslinks\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\@study\guslinks\obj\Debug\net8.0\staticwebassets\msbuild.guslinks.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\@study\guslinks\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\@study\guslinks\obj\Debug\net8.0\guslinks.csproj.Up2Date

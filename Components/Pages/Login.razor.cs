@@ -1,4 +1,6 @@
-﻿using General.Entidades.Guslinks;
+﻿using System;
+using System.Security.Cryptography;
+using General.Entidades.Guslinks;
 using guslinks.Components.Services;
 using guslinks.Components.Uteis;
 using Infra.Data.Repository.Persistence.Guslinks;
@@ -11,8 +13,8 @@ namespace guslinks.Components.Pages
 	{
 		public Usuarios usuario { get; set; }
 
-		[Inject] public CustomAuthenticationStateProvider AuthenticationStateProvider { get; set; }
-		[Inject] public NavigationManager Navigation { get; set; }
+		[Inject] public TokenAuthenticationProvider authStateProvider { get; set; }
+		[Inject] public NavigationManager navigation { get; set; }
 
 		public bool Erro = false;
 		public string MensagemErro = "";
@@ -105,9 +107,15 @@ namespace guslinks.Components.Pages
 						}
 						else
 						{
-							// tudo certo
-							AuthenticationStateProvider.Login(usuario.email);
-							Navigation.NavigateTo("/Painel");
+
+							var token = GeraToken.Gerar();
+
+							authStateProvider.token = token;
+							await authStateProvider.Login(token, usuario.email).ContinueWith((taskwithmessage) =>
+							{
+								navigation.NavigateTo("/Painel");
+							});
+
 						}
 					}
 					else

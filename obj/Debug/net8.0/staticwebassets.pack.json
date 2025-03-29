@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "C:\\@study\\guslinks\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\guslinks.bundle.scp.css",
-      "PackagePath": "staticwebassets\\guslinks.bundle.scp.css"
+      "PackagePath": "staticwebassets\\guslinks.jwixluvd8h.bundle.scp.css"
     },
     {
       "Id": "C:\\@study\\guslinks\\wwwroot\\app.css",
@@ -87,6 +87,10 @@
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.guslinks.props",
       "PackagePath": "buildTransitive\\guslinks.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.guslinks.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.guslinks.Microsoft.AspNetCore.StaticWebAssets.props",

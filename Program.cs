@@ -8,9 +8,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
-// Adiciona os serviços de autenticação
-builder.Services.AddAuthorizationCore();
-builder.Services.AddScoped<CustomAuthenticationStateProvider>();
+builder.Services.AddHttpClient<TokenAuthenticationProvider>();
+builder.Services.AddScoped<TokenAuthenticationProvider>();
+
+builder.Services.AddHttpClient<AuthenticationStateProvider, TokenAuthenticationProvider>();
+builder.Services.AddScoped<AuthenticationStateProvider, TokenAuthenticationProvider>(
+  provider => provider.GetRequiredService<TokenAuthenticationProvider>());
 
 var app = builder.Build();
 
