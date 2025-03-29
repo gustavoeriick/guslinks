@@ -13,13 +13,8 @@ namespace guslinks.Components.Pages
 	{
 		public Usuarios usuario { get; set; }
 
-<<<<<<< HEAD
 		[Inject] public TokenAuthenticationProvider authStateProvider { get; set; }
 		[Inject] public NavigationManager navigation { get; set; }
-=======
-		[Inject] public CustomAuthenticationStateProvider Authentication { get; set; }
-		[Inject] public NavigationManager Navigation { get; set; }
->>>>>>> 3df56d42cd7f9328c7733b5e79f4bae03b22ea46
 
 		public bool Loading { get; set; } = false;
         public bool Erro { get; set; } = false;
@@ -106,7 +101,6 @@ namespace guslinks.Components.Pages
 						}
 						else
 						{
-<<<<<<< HEAD
 
 							var token = GeraToken.Gerar();
 
@@ -115,12 +109,6 @@ namespace guslinks.Components.Pages
 							{
 								navigation.NavigateTo("/Painel");
 							});
-
-=======
-							// tudo certo
-							await Authentication.Login(usuario.email);
-							Navigation.NavigateTo("/Painel");
->>>>>>> 3df56d42cd7f9328c7733b5e79f4bae03b22ea46
 						}
 					}
 					else

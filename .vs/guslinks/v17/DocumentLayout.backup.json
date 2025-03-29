@@ -1,15 +1,12 @@
 {
   "Version": 1,
-<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\@study\\guslinks\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3EBFB140-549B-454C-989E-800D44795D1B}|guslinks.csproj|c:\\@study\\guslinks\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EBFB140-549B-454C-989E-800D44795D1B}|guslinks.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EBFB140-549B-454C-989E-800D44795D1B}|guslinks.csproj|c:\\@study\\guslinks\\components\\services\\tokenauthenticationprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EBFB140-549B-454C-989E-800D44795D1B}|guslinks.csproj|solutionrelative:components\\services\\tokenauthenticationprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.Design.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3EBFB140-549B-454C-989E-800D44795D1B}|guslinks.csproj|c:\\@study\\guslinks\\components\\pages\\painel.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -20,39 +17,12 @@
       "RelativeMoniker": "D:0:0:{3EBFB140-549B-454C-989E-800D44795D1B}|guslinks.csproj|solutionrelative:components\\pages\\login.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EBFB140-549B-454C-989E-800D44795D1B}|guslinks.csproj|c:\\@study\\guslinks\\components\\pages\\homecomponente.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3EBFB140-549B-454C-989E-800D44795D1B}|guslinks.csproj|solutionrelative:components\\pages\\homecomponente.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-=======
-  "WorkspaceRootPath": "C:\\@project\\guslinks\\",
-  "Documents": [
+      "AbsoluteMoniker": "D:0:0:{3EBFB140-549B-454C-989E-800D44795D1B}|guslinks.csproj|c:\\@study\\guslinks\\components\\uteis\\geratoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EBFB140-549B-454C-989E-800D44795D1B}|guslinks.csproj|solutionrelative:components\\uteis\\geratoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
     {
-      "AbsoluteMoniker": "D:0:0:{3EBFB140-549B-454C-989E-800D44795D1B}|guslinks.csproj|c:\\@project\\guslinks\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3EBFB140-549B-454C-989E-800D44795D1B}|guslinks.csproj|c:\\@study\\guslinks\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EBFB140-549B-454C-989E-800D44795D1B}|guslinks.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EBFB140-549B-454C-989E-800D44795D1B}|guslinks.csproj|c:\\@project\\guslinks\\components\\services\\customauthenticationstateprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EBFB140-549B-454C-989E-800D44795D1B}|guslinks.csproj|solutionrelative:components\\services\\customauthenticationstateprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EBFB140-549B-454C-989E-800D44795D1B}|guslinks.csproj|c:\\@project\\guslinks\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3EBFB140-549B-454C-989E-800D44795D1B}|guslinks.csproj|solutionrelative:components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EBFB140-549B-454C-989E-800D44795D1B}|guslinks.csproj|c:\\@project\\guslinks\\wwwroot\\js\\functions.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{3EBFB140-549B-454C-989E-800D44795D1B}|guslinks.csproj|solutionrelative:wwwroot\\js\\functions.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EBFB140-549B-454C-989E-800D44795D1B}|guslinks.csproj|c:\\@project\\guslinks\\components\\pages\\login.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EBFB140-549B-454C-989E-800D44795D1B}|guslinks.csproj|solutionrelative:components\\pages\\login.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EBFB140-549B-454C-989E-800D44795D1B}|guslinks.csproj|c:\\@project\\guslinks\\components\\pages\\painel.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3EBFB140-549B-454C-989E-800D44795D1B}|guslinks.csproj|solutionrelative:components\\pages\\painel.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EBFB140-549B-454C-989E-800D44795D1B}|guslinks.csproj|c:\\@project\\guslinks\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3EBFB140-549B-454C-989E-800D44795D1B}|guslinks.csproj|solutionrelative:components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
->>>>>>> 3df56d42cd7f9328c7733b5e79f4bae03b22ea46
     }
   ],
   "DocumentGroupContainers": [
@@ -62,46 +32,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 4,
-              "Title": "HomeComponente.razor",
-              "DocumentMoniker": "C:\\@study\\guslinks\\Components\\Pages\\HomeComponente.razor",
-              "RelativeDocumentMoniker": "Components\\Pages\\HomeComponente.razor",
-              "ToolTip": "C:\\@study\\guslinks\\Components\\Pages\\HomeComponente.razor",
-              "RelativeToolTip": "Components\\Pages\\HomeComponente.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-09T22:37:01.955Z",
-=======
-              "DocumentIndex": 6,
-              "Title": "Login.razor",
-              "DocumentMoniker": "C:\\@project\\guslinks\\Components\\Pages\\Login.razor",
-              "RelativeDocumentMoniker": "Components\\Pages\\Login.razor",
-              "ToolTip": "C:\\@project\\guslinks\\Components\\Pages\\Login.razor",
-              "RelativeToolTip": "Components\\Pages\\Login.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-28T00:28:54.653Z",
->>>>>>> 3df56d42cd7f9328c7733b5e79f4bae03b22ea46
-              "IsPinned": true,
+              "DocumentIndex": 0,
+              "Title": "Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "RelativeDocumentMoniker": "..\\..\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "RelativeToolTip": "..\\..\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "ViewState": "AgIAAEUCAAAAAAAAAIAwwGUCAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-03-29T02:02:12.087Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
+              "DocumentIndex": 1,
+              "Title": "Microsoft.NET.Sdk.StaticWebAssets.Design.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.Design.targets",
+              "RelativeDocumentMoniker": "..\\..\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.Design.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.Design.targets",
+              "RelativeToolTip": "..\\..\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.Design.targets",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-03-29T02:01:14.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Painel.razor",
               "DocumentMoniker": "C:\\@study\\guslinks\\Components\\Pages\\Painel.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Painel.razor",
               "ToolTip": "C:\\@study\\guslinks\\Components\\Pages\\Painel.razor",
               "RelativeToolTip": "Components\\Pages\\Painel.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-29T01:19:07.954Z",
+              "WhenOpened": "2025-03-29T01:57:39.582Z",
               "EditorCaption": ""
             },
             {
@@ -112,112 +81,33 @@
               "RelativeDocumentMoniker": "Components\\Pages\\Login.razor.cs",
               "ToolTip": "C:\\@study\\guslinks\\Components\\Pages\\Login.razor.cs",
               "RelativeToolTip": "Components\\Pages\\Login.razor.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAcwG0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T00:52:36.153Z",
-=======
-              "DocumentIndex": 4,
-              "Title": "Login.razor.cs",
-              "DocumentMoniker": "C:\\@project\\guslinks\\Components\\Pages\\Login.razor.cs",
-              "RelativeDocumentMoniker": "Components\\Pages\\Login.razor.cs",
-              "ToolTip": "C:\\@project\\guslinks\\Components\\Pages\\Login.razor.cs",
-              "RelativeToolTip": "Components\\Pages\\Login.razor.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAiwGYAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T00:28:59.833Z",
-              "IsPinned": true,
->>>>>>> 3df56d42cd7f9328c7733b5e79f4bae03b22ea46
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T01:56:03.053Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-<<<<<<< HEAD
-              "Title": "TokenAuthenticationProvider.cs",
-              "DocumentMoniker": "C:\\@study\\guslinks\\Components\\Services\\TokenAuthenticationProvider.cs",
-              "RelativeDocumentMoniker": "Components\\Services\\TokenAuthenticationProvider.cs",
-              "ToolTip": "C:\\@study\\guslinks\\Components\\Services\\TokenAuthenticationProvider.cs",
-              "RelativeToolTip": "Components\\Services\\TokenAuthenticationProvider.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH0AAAAaAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "GeraToken.cs",
+              "DocumentMoniker": "C:\\@study\\guslinks\\Components\\Uteis\\GeraToken.cs",
+              "RelativeDocumentMoniker": "Components\\Uteis\\GeraToken.cs",
+              "ToolTip": "C:\\@study\\guslinks\\Components\\Uteis\\GeraToken.cs",
+              "RelativeToolTip": "Components\\Uteis\\GeraToken.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T00:45:52.061Z",
-=======
-              "Title": "CustomAuthenticationStateProvider.cs",
-              "DocumentMoniker": "C:\\@project\\guslinks\\Components\\Services\\CustomAuthenticationStateProvider.cs",
-              "RelativeDocumentMoniker": "Components\\Services\\CustomAuthenticationStateProvider.cs",
-              "ToolTip": "C:\\@project\\guslinks\\Components\\Services\\CustomAuthenticationStateProvider.cs",
-              "RelativeToolTip": "Components\\Services\\CustomAuthenticationStateProvider.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAuwBgAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T00:48:15.45Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T01:55:20.828Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Painel.razor",
-              "DocumentMoniker": "C:\\@project\\guslinks\\Components\\Pages\\Painel.razor",
-              "RelativeDocumentMoniker": "Components\\Pages\\Painel.razor",
-              "ToolTip": "C:\\@project\\guslinks\\Components\\Pages\\Painel.razor",
-              "RelativeToolTip": "Components\\Pages\\Painel.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-28T00:50:37.512Z",
-              "IsPinned": true,
->>>>>>> 3df56d42cd7f9328c7733b5e79f4bae03b22ea46
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Program.cs",
-<<<<<<< HEAD
               "DocumentMoniker": "C:\\@study\\guslinks\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\@study\\guslinks\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T01:31:12.975Z",
-=======
-              "DocumentMoniker": "C:\\@project\\guslinks\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\@project\\guslinks\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T01:14:00.799Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "functions.js",
-              "DocumentMoniker": "C:\\@project\\guslinks\\wwwroot\\js\\functions.js",
-              "RelativeDocumentMoniker": "wwwroot\\js\\functions.js",
-              "ToolTip": "C:\\@project\\guslinks\\wwwroot\\js\\functions.js",
-              "RelativeToolTip": "wwwroot\\js\\functions.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-03-28T01:24:00.111Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "App.razor",
-              "DocumentMoniker": "C:\\@project\\guslinks\\Components\\App.razor",
-              "RelativeDocumentMoniker": "Components\\App.razor",
-              "ToolTip": "C:\\@project\\guslinks\\Components\\App.razor",
-              "RelativeToolTip": "Components\\App.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-28T01:24:23.43Z",
->>>>>>> 3df56d42cd7f9328c7733b5e79f4bae03b22ea46
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T01:55:09.887Z"
             }
           ]
         }
